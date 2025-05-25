@@ -1,0 +1,19 @@
+import "./globals.css";
+import alataLocal from "next/font/local";
+
+const myFont = alataLocal({
+  src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Alata/Alata-Regular.ttf",
+});
+
+export const metadata = {
+  title: "Ghazy Portfolio's",
+  description: "---",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className="bg-[#F8F4E1] scroll-smooth">
+      <body className={`${myFont.className}`}>{children}</body>
+    </html>
+  );
+}

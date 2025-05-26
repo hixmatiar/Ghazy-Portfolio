@@ -45,53 +45,56 @@ export default function Footer() {
       </div>
       <div className="w-full h-fit bg-white px-3 md:px-5">
         {/* bagian 1 */}
-        <div className="flex justify-between items-center w-full h-fit pt-6 pb-0 md:pb-4">
-          <h1
-            className={` ${zain.className} text-xl text-center md:text-5xl xl:text-6xl`}
-          >
-            Let's make your idea come true
-          </h1>
+        <h1
+          className={` ${zain.className} text-2xl text-center md:text-6xl xl:text-7xl pt-4 md:pt-8`}
+        >
+          Let's make your idea come true
+        </h1>
+        <div className="flex justify-center items-center w-full h-fit pt-2 md:pt-4 pb-0 md:pb-4">
           <a href="https://wa.me/628170050337">
             <button
-              className={`${zain.className} w-fit h-fit px-6 py-2 rounded-full bg-[#F8F4E1] text-xs md:text-xl cursor-pointer`}
+              className={`${zain.className} w-fit h-fit px-6 py-2 rounded-full bg-[#F8F4E1] text-md md:text-2xl cursor-pointer`}
             >
               Let's Talk
             </button>
           </a>
         </div>
 
-        <div className="w-full h-1 bg-gray-200 mt-2"></div>
-        {/* bagian 2 */}
-        <div className="flex justify-between items-start py-3">
-          <div className={`${zain.className} flex items-center gap-2`}>
-            <h1 className="hidden text-lg md:block">
-              Muhammad Ghazy Hikmatiar
-            </h1>
-            <h1 className="hidden md:block">|</h1>
-            <h1 className={`text-xs md:text-lg`}> hikmatiarghazy@gmail.com</h1>
-          </div>
-          <div className="flex gap-2 items-center">
+        <div className="flex justify-center  items-start pt-6 md:pt-12 pb-2">
+          <div className="flex gap-3 items-center">
             <a href="https://www.linkedin.com/in/m-ghazy-hikmatiar-ba51bb349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-              <span className="w-6 h-6 md:w-10 md:h-10 rounded-full bg-[#F8F4E1] flex items-center justify-center">
-                <LinkedinLogo className="w-[12px] h-[12px] md:w-[24px] md:h-[24px]" />
+              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
+                <LinkedinLogo className="w-[24px] h-[24px]" />
               </span>
             </a>
             <a href="https://www.instagram.com/ghazyhix_/">
-              <span className="w-6 h-6 md:w-10 md:h-10 rounded-full bg-[#F8F4E1] flex items-center justify-center">
-                <InstagramLogo className="w-[12px] h-[12px] md:w-[24px] md:h-[24px]" />
+              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
+                <InstagramLogo className="w-[24px] h-[24px]" />
               </span>
             </a>
             <a href="...">
-              <span className="w-6 h-6 md:w-10 md:h-10 rounded-full bg-[#F8F4E1] flex items-center justify-center">
-                <YoutubeLogo className="w-[12px] h-[12px] md:w-[24px] md:h-[24px]" />
+              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
+                <YoutubeLogo className="w-[24px] h-[24px]" />
               </span>
             </a>
             <a href="https://github.com/hixmatiar">
-              <span className="w-6 h-6 md:w-10 md:h-10 rounded-full bg-[#F8F4E1] flex items-center justify-center">
-                <GithubLogo className="w-[12px] h-[12px] md:w-[24px] md:h-[24px]" />
+              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
+                <GithubLogo className="w-[24px] h-[24px]" />
               </span>
             </a>
           </div>
+        </div>
+        <div className="w-full h-[2px] bg-gray-200 mt-2"></div>
+        {/* bagian 2 */}
+        <div
+          className={`${zain.className} flex justify-between items-center gap-2 pt-1 md:pt-2 pb-4`}
+        >
+          <div className="flex gap-2">
+            <h1 className="text-xs md:text-lg">Muhammad Ghazy Hikmatiar</h1>
+            <h1 className="hidden md:block">|</h1>
+            <h1 className="md:text-lg hidden md:block">Surakarta, Indonesia</h1>
+          </div>
+          <h1 className={`text-xs md:text-lg`}> hikmatiarghazy@gmail.com</h1>
         </div>
       </div>
     </div>

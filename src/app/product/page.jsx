@@ -273,13 +273,10 @@ export default function Product() {
           className="w-full h-[16em] md:h-[24em] text-black"
         >
           <SwiperSlide className="bg-teal-200 rounded-3xl mockup-window">
-            Slide 1 oyy
+            Siana
           </SwiperSlide>
           <SwiperSlide className="bg-amber-200 rounded-3xl mockup-window">
-            Slide 2
-          </SwiperSlide>
-          <SwiperSlide className="bg-purple-200 rounded-3xl mockup-window">
-            Slide 3
+            Sabuk
           </SwiperSlide>
         </Swiper>
       </main>

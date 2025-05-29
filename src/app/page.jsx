@@ -38,14 +38,14 @@ export default function Home() {
           <h1 className="text-[4em] xl:text-[12em] md:text-[7em]">
             Hello. I'm Ghazy
           </h1>
-          <h1 className="text-[2.6em] md:text-[4.5em] xl:text-[7.5em] mt-[-0.7em]">
-            Software Developer
+          <h1 className="text-[2.3em] md:text-[4em] xl:text-[7em] mt-[-0.7em]">
+            Big Data & Front-end Dev
           </h1>
           <p
             className={` ${alata.className} text-[0.8em]/5 lg:text-[1.5em] px-8 md:text-[1.1em]/7 md:px-28 text-center mt-[3em]`}
           >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-            labore itaque non reprehenderit similique porro.
+            I process big data and visualize it to determine the best decision
+            for the solution to your problem
           </p>
         </div>
       </main>
@@ -69,7 +69,7 @@ export default function Home() {
             {/* content */}
             <div className="w-full h-full pl-14 pt-2">
               <h1 className={`${zain.className} md:text-[2em]`}>
-                Applications and Web to develop your ideas
+                Find the best solution for your problem
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-orange-200">
@@ -109,7 +109,7 @@ export default function Home() {
             {/* content */}
             <div className="w-full h-full pl-14 pt-2">
               <h1 className={`${zain.className} md:text-[2em]`}>
-                Applications and Web to develop your ideas
+                Build the best decision for your ideas
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-amber-200">

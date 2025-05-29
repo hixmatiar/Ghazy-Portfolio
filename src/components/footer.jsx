@@ -46,7 +46,7 @@ export default function Footer() {
       <div className="w-full h-fit bg-white px-3 md:px-5">
         {/* bagian 1 */}
         <h1
-          className={` ${zain.className} text-2xl text-center md:text-6xl xl:text-7xl pt-4 md:pt-8`}
+          className={` ${zain.className} text-2xl text-center md:text-6xl xl:text-7xl pt-6 md:pt-12`}
         >
           Let's make your idea come true
         </h1>

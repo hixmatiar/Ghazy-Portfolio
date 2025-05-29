@@ -4,7 +4,9 @@ import Navbar from "@/components/navbar";
 import zainLocal from "next/font/local";
 import Link from "next/link";
 import {
+  BatteryHigh,
   Browsers,
+  CellSignalHigh,
   ChartBar,
   Code,
   Database,
@@ -14,6 +16,7 @@ import {
 import Footer from "@/components/footer";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -57,7 +60,7 @@ export default function Product() {
             {/* content */}
             <div className="w-full h-full pl-14 pt-2">
               <h1 className={`${zain.className} md:text-[2em]`}>
-                Applications and Web to develop your ideas
+                Find the best solution for your problem
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-orange-200">
@@ -97,7 +100,7 @@ export default function Product() {
             {/* content */}
             <div className="w-full h-full pl-14 pt-2">
               <h1 className={`${zain.className} md:text-[2em]`}>
-                Applications and Web to develop your ideas
+                Build the best decision for your ideas
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-amber-200">
@@ -170,13 +173,13 @@ export default function Product() {
           href="https://www.microsoft.com/id-id/microsoft-365/excel"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100  hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100  hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/excel.png" fill alt="ghazy" className="" />
             </div>
             <div className="text-black">
-              <h1 className="text-lg md:text-2xl">Excel</h1>
-              <p className="hidden xl:block">Application for </p>
+              <h1 className="text-md md:text-2xl">Excel</h1>
+              <p className="hidden xl:block">Application for analyze data</p>
             </div>
           </div>
         </a>
@@ -184,13 +187,15 @@ export default function Product() {
           href="https://jupyter.org/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-fuchsia-300 to-fuchsia-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/jupyter.png" fill alt="ghazy" className="" />
             </div>
             <div className="text-black">
-              <h1 className="text-lg md:text-2xl">Jupyter</h1>
-              <p className="hidden xl:block">Application for </p>
+              <h1 className="text-md md:text-2xl">Jupyter</h1>
+              <p className="hidden xl:block">
+                Application for data visualization
+              </p>
             </div>
           </div>
         </a>
@@ -198,13 +203,15 @@ export default function Product() {
           href="https://www.tensorflow.org/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-teal-300 to-teal-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
-              <Image src="/tensor.png" fill alt="ghazy" className="" />
+              <Image src="/tensor.png" fill alt="ghazy" />
             </div>
             <div className="text-black">
-              <h1 className="text-lg md:text-2xl">TensorFlow</h1>
-              <p className="hidden xl:block">Application for </p>
+              <h1 className="text-md md:text-2xl">TensorFlow</h1>
+              <p className="hidden xl:block">
+                Application for machine learning
+              </p>
             </div>
           </div>
         </a>
@@ -212,13 +219,13 @@ export default function Product() {
           href="https://code.visualstudio.com/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/vscode.png" fill alt="ghazy" className="" />
             </div>
             <div className="text-black">
-              <h1 className="text-lg md:text-2xl">VS Code</h1>
-              <p className="hidden xl:block">Application for </p>
+              <h1 className="text-md md:text-2xl">VS Code</h1>
+              <p className="hidden xl:block">Code editor application</p>
             </div>
           </div>
         </a>
@@ -226,13 +233,15 @@ export default function Product() {
           href="https://www.tableau.com/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-fuchsia-300 to-fuchsia-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/tableau.png" fill alt="ghazy" className="" />
             </div>
             <div className="text-black">
-              <h1 className="text-lg md:text-2xl">Tableau</h1>
-              <p className="hidden xl:block">Application for </p>
+              <h1 className="text-md md:text-2xl">Tableau</h1>
+              <p className="hidden xl:block">
+                Application for data visualization
+              </p>
             </div>
           </div>
         </a>
@@ -240,13 +249,13 @@ export default function Product() {
           href="https://nextjs.org/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-teal-300 to-teal-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/next.svg" fill alt="ghazy" className="" />
             </div>
             <div className="text-black">
-              <h1 className="text-lg md:text-2xl">Next JS</h1>
-              <p className="hidden xl:block">Application for </p>
+              <h1 className="text-md md:text-2xl">Next JS</h1>
+              <p className="hidden xl:block">Application for build websites</p>
             </div>
           </div>
         </a>
@@ -260,10 +269,15 @@ export default function Product() {
       </h1>
 
       {/* main latest */}
-      <main className="w-full h-fit px-[2em] xl:px-[12em]">
+      <main className="w-full h-fit px-[2em] xl:px-[12em] cursor-pointer">
         <Swiper
           loop="true"
           slidesPerView="1"
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           breakpoints={{
             1280: {
               slidesPerView: 2,
@@ -272,11 +286,75 @@ export default function Product() {
           spaceBetween={10}
           className="w-full h-[16em] md:h-[24em] text-black"
         >
-          <SwiperSlide className="bg-teal-200 rounded-3xl mockup-window">
-            Siana
+          <SwiperSlide className="bg-blue-400 rounded-3xl mockup-window">
+            <div className="w-full h-full px-6 pt-1 text-white">
+              <div className="w-full h-fit flex justify-between items-center">
+                <h1 className="text-2xl md:text-4xl">Siana</h1>
+                <span className="text-xs border-2 rounded-full px-4 py-1">
+                  Mobile App
+                </span>
+              </div>
+              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                Natural Disaster Mitigation Application
+              </p>
+              <div className="flex justify-center w-full h-full">
+                <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
+                  <div className="text-black w-full h-12 flex mb-2">
+                    <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
+                      <p className="text-lg">18.05</p>
+                    </div>
+                    <div className="h-full w-[35%]  flex items-end ">
+                      <div className="w-full h-8 bg-black rounded-full"></div>
+                    </div>
+                    <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
+                      <CellSignalHigh size={32} weight="bold" />
+                      <BatteryHigh size={32} weight="fill" />
+                    </div>
+                  </div>
+                  <Image
+                    src="/siana.jpg"
+                    width={380}
+                    height={600}
+                    className="z-20"
+                  />
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-amber-200 rounded-3xl mockup-window">
-            Sabuk
+          <SwiperSlide className="bg-rose-400 rounded-3xl mockup-window ">
+            <div className="w-full h-full px-6 pt-1 text-white">
+              <div className="w-full h-fit flex justify-between items-center">
+                <h1 className="text-2xl md:text-4xl">Sabuk</h1>
+                <span className="text-xs border-2 rounded-full px-4 py-1">
+                  Mobile App
+                </span>
+              </div>
+              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                Traffic Awareness Raising Application
+              </p>
+              <div className="flex justify-center w-full h-full">
+                <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
+                  <div className="text-black w-full h-12 flex mb-2">
+                    <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
+                      <p className="text-lg">16.04</p>
+                    </div>
+                    <div className="h-full w-[35%]  flex items-end ">
+                      <div className="w-full h-8 bg-black rounded-full"></div>
+                    </div>
+                    <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
+                      <CellSignalHigh size={32} weight="bold" />
+                      <BatteryHigh size={32} weight="fill" />
+                    </div>
+                  </div>
+                  <Image
+                    src="/sabuk.png"
+                    width={380}
+                    height={600}
+                    className="z-20"
+                  />
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
         </Swiper>
       </main>

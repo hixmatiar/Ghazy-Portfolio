@@ -4,23 +4,18 @@ import Navbar from "@/components/navbar";
 import zainLocal from "next/font/local";
 import Link from "next/link";
 import {
-  BatteryHigh,
   Browsers,
-  CellSignalHigh,
   ChartBar,
-  Code,
   Database,
-  Table,
   X,
 } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import Latest from "@/components/latest";
 // import "./styke.css";
 
 const zain = zainLocal({
@@ -64,7 +59,9 @@ export default function Product() {
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-orange-200">
-                  <Code size={20} />
+                  <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
+                    <Image src="/jupyter.png" fill alt="ghazy" className="" />
+                  </div>
                   <span className="text-xs">Jupyter</span>
                   <span className="w-[7em] h-3 rounded-full bg-gray-100"></span>
                   <span className="w-[5em] h-3 rounded-full bg-gray-100"></span>
@@ -104,7 +101,9 @@ export default function Product() {
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-amber-200">
-                  <Table size={20} />
+                  <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
+                    <Image src="/tableau.png" fill alt="ghazy" className="" />
+                  </div>
                   <span className="text-xs">Tableau</span>
                   <span className="w-[4em] h-3 rounded-full bg-gray-100"></span>
                   <span className="w-[2em] h-3 rounded-full bg-gray-100"></span>
@@ -140,14 +139,14 @@ export default function Product() {
             {/* content */}
             <div className="w-full h-full pl-14 pt-2">
               <h1 className={`${zain.className} md:text-[2em]`}>
-                Applications and Web to develop your ideas
+                Applications and Website to develop your ideas
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
                   <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
                   <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
                   <span className="w-3 h-3 bg-green-400 rounded-full"></span>
-                  <span className="bg-gray- 00 w-[7em] h-10 ml-2 flex items-center px-3 gap-2">
+                  <span className="bg-gray-300 w-[7em] h-10 ml-2 flex items-center px-3 gap-2">
                     <span className="w-full h-3 rounded-full bg-gray-100"></span>
                     <span>
                       <X size={16} color="white" weight="bold" />
@@ -162,7 +161,7 @@ export default function Product() {
 
       {/* title tools */}
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-black pb-3 bg--[#F8F4E1]`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-black pb-3 bg-[#F8F4E1]`}
       >
         Tools in developing your ideas
       </h1>
@@ -261,103 +260,7 @@ export default function Product() {
         </a>
       </main>
 
-      {/* title latest */}
-      <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-black pb-3 bg--[#F8F4E1]`}
-      >
-        My latest project's
-      </h1>
-
-      {/* main latest */}
-      <main className="w-full h-fit px-[2em] xl:px-[12em] cursor-pointer">
-        <Swiper
-          loop="true"
-          slidesPerView="1"
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-          breakpoints={{
-            1280: {
-              slidesPerView: 2,
-            },
-          }}
-          spaceBetween={10}
-          className="w-full h-[16em] md:h-[24em] text-black"
-        >
-          <SwiperSlide className="bg-blue-400 rounded-3xl mockup-window">
-            <div className="w-full h-full px-6 pt-1 text-white">
-              <div className="w-full h-fit flex justify-between items-center">
-                <h1 className="text-2xl md:text-4xl">Siana</h1>
-                <span className="text-xs border-2 rounded-full px-4 py-1">
-                  Mobile App
-                </span>
-              </div>
-              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                Natural Disaster Mitigation Application
-              </p>
-              <div className="flex justify-center w-full h-full">
-                <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
-                  <div className="text-black w-full h-12 flex mb-2">
-                    <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                      <p className="text-lg">18.05</p>
-                    </div>
-                    <div className="h-full w-[35%]  flex items-end ">
-                      <div className="w-full h-8 bg-black rounded-full"></div>
-                    </div>
-                    <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
-                      <CellSignalHigh size={32} weight="bold" />
-                      <BatteryHigh size={32} weight="fill" />
-                    </div>
-                  </div>
-                  <Image
-                    src="/siana.jpg"
-                    width={380}
-                    height={600}
-                    className="z-20"
-                  />
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="bg-rose-400 rounded-3xl mockup-window ">
-            <div className="w-full h-full px-6 pt-1 text-white">
-              <div className="w-full h-fit flex justify-between items-center">
-                <h1 className="text-2xl md:text-4xl">Sabuk</h1>
-                <span className="text-xs border-2 rounded-full px-4 py-1">
-                  Mobile App
-                </span>
-              </div>
-              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                Traffic Awareness Raising Application
-              </p>
-              <div className="flex justify-center w-full h-full">
-                <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
-                  <div className="text-black w-full h-12 flex mb-2">
-                    <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                      <p className="text-lg">16.04</p>
-                    </div>
-                    <div className="h-full w-[35%]  flex items-end ">
-                      <div className="w-full h-8 bg-black rounded-full"></div>
-                    </div>
-                    <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
-                      <CellSignalHigh size={32} weight="bold" />
-                      <BatteryHigh size={32} weight="fill" />
-                    </div>
-                  </div>
-                  <Image
-                    src="/sabuk.png"
-                    width={380}
-                    height={600}
-                    className="z-20"
-                  />
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </main>
+      <Latest />
 
       <footer className="w-full h-fit px-[2em] xl:px-[12em]">
         <Footer />

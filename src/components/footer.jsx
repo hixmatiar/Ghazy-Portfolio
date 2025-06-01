@@ -63,7 +63,7 @@ export default function Footer() {
         <div className="flex justify-center  items-start pt-6 md:pt-12 pb-2">
           <div className="flex gap-3 items-center">
             <a href="https://www.linkedin.com/in/m-ghazy-hikmatiar-ba51bb349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
+              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#f8f4e1] flex items-center justify-center">
                 <LinkedinLogo className="w-[24px] h-[24px]" />
               </span>
             </a>

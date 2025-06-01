@@ -8,15 +8,15 @@ const zain = zainLocal({
 
 export default function About() {
   return (
-    <section className="bg-[#F8F4E1] w-full h-full">
+    <section className="bg-[#F8F4E1] w-full h-full text-black">
       {/* header */}
       <header className="flex w-full h-fit justify-center">
         <Navbar />
       </header>
 
       {/* main hero */}
-      <main className="w-full h-fit flex">
-        <div className=""></div>
+      <main className="w-full h-fit flex pt-24">
+        <div className="">hai</div>
         <div></div>
       </main>
 

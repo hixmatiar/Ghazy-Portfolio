@@ -87,7 +87,12 @@ export default function Developer() {
         </div>
 
         {/* image */}
-        <div className="w-full h-auto aspect-[4/2] md:aspect-[6/2] bg-pink-400 mt-12 md:mt-24"></div>
+        <div className="w-full h-auto aspect-[5/3] md:aspect-[7/3] bg-pink-400 mt-12 md:mt-24 relative overflow-hidden rounded-3xl">
+          <Image src="/code.png" fill alt="ghazy" className="relative" />
+        </div>
+        <div className="w-full h-auto aspect-[5/3] md:aspect-[7/3] bg-pink-400 mt-6 md:mt-12 relative overflow-hidden rounded-3xl">
+          <Image src="/terminal.png" fill alt="ghazy" className="relative" />
+        </div>
 
         {/* template */}
         <h1
@@ -181,7 +186,7 @@ export default function Developer() {
                 <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
                   Traffic Awareness Raising Application
                 </p>
-                <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-t-2xl">
+                <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                   <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
                     <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
                     <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
@@ -207,7 +212,7 @@ export default function Developer() {
                 <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
                   Traffic Awareness Raising Application
                 </p>
-                <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-t-2xl">
+                <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                   <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
                     <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
                     <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>

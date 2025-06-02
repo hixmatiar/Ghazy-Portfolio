@@ -77,7 +77,12 @@ export default async function Analyst() {
         </div>
 
         {/* image */}
-        <div className="w-full h-auto aspect-[4/2] md:aspect-[6/2] bg-pink-400 mt-12 md:mt-24"></div>
+        <div className="w-full h-auto aspect-[5/3] md:aspect-[7/3] bg-pink-400 mt-12 md:mt-24 relative overflow-hidden rounded-3xl">
+          <Image src="/xcel.png" fill alt="ghazy" className="relative" />
+        </div>
+        <div className="w-full h-auto aspect-[5/3] md:aspect-[7/3] bg-pink-400 mt-6 md:mt-12 relative overflow-hidden rounded-3xl">
+          <Image src="/tab.png" fill alt="ghazy" className="relative" />
+        </div>
 
         {/* back */}
         <div className="w-full h-fit flex justify-center mt-8">

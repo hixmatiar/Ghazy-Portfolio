@@ -22,8 +22,10 @@ export default function Home() {
       </header>
 
       {/* main hero */}
-      <main className="flex w-full h-fit  justify-center items-center text-black bg-gradient-to-b from-sky-300 to-[#F8F4E1] pt-24">
-        <div className={`${zain.className} text-center h-fit w-fit py-6`}>
+      <main className="flex w-full h-fit  justify-center items-center bg-gradient-to-b from-sky-300 to-[#F8F4E1] pt-24">
+        <div
+          className={`${zain.className} text-center h-fit w-fit py-6 text-[#1c3c63]`}
+        >
           <h1 className="text-[4em] xl:text-[12em] md:text-[7em]">
             Hello. I'm Ghazy
           </h1>
@@ -43,7 +45,7 @@ export default function Home() {
       <Latest />
 
       {/* footer */}
-      <footer className="w-full h-fit px-[2em] xl:px-[12em]">
+      <footer>
         <Footer />
       </footer>
     </section>

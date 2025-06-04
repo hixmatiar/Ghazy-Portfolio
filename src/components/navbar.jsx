@@ -8,8 +8,10 @@ const alata = alataLocal({
 
 export default function Navbar() {
   return (
-    <div className={` ${alata.className} w-full flex justify-center`}>
-      <div className="px-6 gap-6 lg:gap-8 flex bg-white/40 backdrop-blur-xs md:backdrop-blur-sm z-10  w-fit h-14 lg:h-16 rounded-full justify-center items-center shadow-lg fixed mt-8">
+    <div
+      className={` ${alata.className} w-full flex justify-center items-center z-10 fixed`}
+    >
+      <div className="px-6 gap-6 lg:gap-8 flex bg-white/40 backdrop-blur-xs md:backdrop-blur-sm w-fit h-14 lg:h-16 rounded-full justify-center items-center shadow-lg mt-8">
         <Link href="/" className="text-black text-s lg:text-lg font-medium">
           Home
         </Link>

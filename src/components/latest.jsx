@@ -2,22 +2,23 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { BatteryHigh, CellSignalHigh } from "@phosphor-icons/react/dist/ssr";
-import zainLocal from "next/font/local";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
+import { Zain } from "next/font/google";
 
-const zain = zainLocal({
-  src: "../app/fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export default function Latest() {
   return (
     <section>
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-black pb-3 bg--[#F8F4E1]`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg--[#F8F4E1]`}
       >
         My latest project's
       </h1>
@@ -65,7 +66,7 @@ export default function Latest() {
                       </span>
                     </div>
                     <Image
-                      src="/siana.jpg"
+                      src="/sianahome.jpg"
                       width={380}
                       height={600}
                       className="z-20"
@@ -103,7 +104,7 @@ export default function Latest() {
                       </span>
                     </div>
                     <Image
-                      src="/sabuk.png"
+                      src="/sabukhome.jpg"
                       width={380}
                       height={600}
                       className="z-20"

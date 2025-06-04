@@ -3,22 +3,19 @@ import { zainLocal } from "next/font/local";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Image from "next/image";
+import Navbar from "@/components/navbar";
 
 const zain = zainLocal({
   src: "../fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
 });
 
-export default async function Analyst() {
-  await new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("intenional delay");
-    }, 1000);
-  });
+export default function Analyst() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
+        <Navbar />
         <div
-          className={` ${zain.className} w-full h-48 lg:h-64 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl`}
+          className={` ${zain.className} w-full pt-42 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           Data Analyst
         </div>
@@ -29,7 +26,6 @@ export default async function Analyst() {
         <div className="w-full h-auto">
           <div className="w-full h-auto bg-white mt-6 overflow-hidden rounded-2xl">
             <div className="flex justify-start items-center overflow-hidden w-full h-10 md:h-12 gap-3 md:gap-5 px-4 bg-orange-200">
-              {/* <Table className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" /> */}
               <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
                 <Image src="/tableau.png" fill alt="ghazy" className="" />
               </div>
@@ -51,7 +47,7 @@ export default async function Analyst() {
 
         {/* overview */}
         <h1
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center`}
+          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
         >
           Overview
         </h1>
@@ -77,31 +73,18 @@ export default async function Analyst() {
         </div>
 
         {/* image */}
-        <div className="w-full h-auto aspect-[5/3] md:aspect-[7/3] bg-pink-400 mt-12 md:mt-24 relative overflow-hidden rounded-3xl">
-          <Image src="/xcel.png" fill alt="ghazy" className="relative" />
+        <div className="w-full h-fit md:flex gap-4 mt-12 md:mt-24">
+          <div className="w-full h-auto aspect-video relative overflow-hidden rounded-3xl">
+            <Image src="/xcel.png" fill alt="ghazy" className="relative" />
+          </div>
+          <div className="w-full h-auto aspect-video relative overflow-hidden rounded-3xl mt-6 md:mt-0">
+            <Image src="/tab.png" fill alt="ghazy" className="relative" />
+          </div>
         </div>
-        <div className="w-full h-auto aspect-[5/3] md:aspect-[7/3] bg-pink-400 mt-6 md:mt-12 relative overflow-hidden rounded-3xl">
-          <Image src="/tab.png" fill alt="ghazy" className="relative" />
-        </div>
-
-        {/* back */}
-        <div className="w-full h-fit flex justify-center mt-8">
-          <Link href="/">
-            <button
-              className={`${zain.className} flex items-center gap-2 border px-4 py-2 rounded-full text-xs md:text-lg cursor-pointer`}
-            >
-              <span>
-                <ArrowLeft className="w-4 h-4 md:w-6 md:h-6" />
-              </span>
-              Back to home?
-            </button>
-          </Link>
-        </div>
-
-        <footer>
-          <Footer />
-        </footer>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </section>
   );
 }

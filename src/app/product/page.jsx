@@ -3,14 +3,11 @@
 import Navbar from "@/components/navbar";
 import zainLocal from "next/font/local";
 import Link from "next/link";
-import {
-  Browsers,
-  ChartBar,
-  Database,
-  X,
-} from "@phosphor-icons/react/dist/ssr";
+import { CellSignalHigh, X, BatteryHigh } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -31,139 +28,223 @@ export default function Product() {
 
       {/* title display */}
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-36 lg:pt-42 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-black pb-3 bg-gradient-to-b from-sky-300 to-[#F8F4E1]`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-36 lg:pt-42 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg-gradient-to-b from-sky-300 to-[#F8F4E1]`}
       >
         Let's develop your ideas
       </h1>
 
       {/* main display */}
-      <main className="grid grid-cols-1 lg:grid-cols-6 gap-6 w-full h-fit justify-center bg-[#F8F4E1] px-[2em] xl:px-[12em] text-black">
-        {/* content 1 */}
-        <Link
-          href="/scientist"
-          className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-sky-300 lg:col-span-3 overflow-hidden shadow-xl hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
+      <main className="w-full h-fit cursor-pointer px-[2em] xl:px-[12em]">
+        <Swiper
+          loop="true"
+          slidesPerView="1"
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          breakpoints={{
+            1280: {
+              slidesPerView: 2,
+            },
+          }}
+          spaceBetween={10}
+          className="w-full h-[16em] md:h-[24em] text-black"
         >
-          <div
-            className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-sky-300 lg:col-span-3 overflow-hidden`}
-          >
-            {/* header */}
-            <div className="w-full flex justify-start items-center h-12 bg-sky-500 px-4 gap-2">
-              <Database size={32} />
-              <span>Data Scientist</span>
-            </div>
-
-            {/* content */}
-            <div className="w-full h-full pl-14 pt-2">
-              <h1 className={`${zain.className} md:text-[2em]`}>
-                Find the best solution for your problem
-              </h1>
-              <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
-                <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-orange-200">
-                  <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
-                    <Image src="/jupyter.png" fill alt="ghazy" className="" />
-                  </div>
-                  <span className="text-xs">Jupyter</span>
-                  <span className="w-[7em] h-3 rounded-full bg-gray-100"></span>
-                  <span className="w-[5em] h-3 rounded-full bg-gray-100"></span>
-                  <span className="w-[2em] h-3 rounded-full bg-gray-100"></span>
-                </div>
-                <div className="pl-10 pt-4">
-                  <p className="text-xs">
-                    <code>{">"} import numpy as np</code>
-                  </p>
-                  <div className="w-3/4 h-3 rounded-full bg-gray-200 mt-2"></div>
-                  <div className="w-5/6 h-3 rounded-full bg-gray-200 mt-2"></div>
-                  <div className="w-7/12 h-3 rounded-full bg-gray-200 mt-2"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link>
-
-        {/* content 2 */}
-        <Link
-          href="/analyst"
-          className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-sky-300 lg:col-span-3 overflow-hidden shadow-xl hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
-        >
-          <div
-            className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-fuchsia-200 lg:col-span-3 overflow-hidden`}
-          >
-            {/* header */}
-            <div className="w-full flex justify-start items-center h-12 bg-fuchsia-300 px-4 gap-2 rounded">
-              <ChartBar size={32} />
-              <span>Data Analyst</span>
-            </div>
-
-            {/* content */}
-            <div className="w-full h-full pl-14 pt-2">
-              <h1 className={`${zain.className} md:text-[2em]`}>
-                Build the best decision for your ideas
-              </h1>
-              <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
-                <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-amber-200">
-                  <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
-                    <Image src="/tableau.png" fill alt="ghazy" className="" />
-                  </div>
-                  <span className="text-xs">Tableau</span>
-                  <span className="w-[4em] h-3 rounded-full bg-gray-100"></span>
-                  <span className="w-[2em] h-3 rounded-full bg-gray-100"></span>
-                  <span className="w-[6em] h-3 rounded-full bg-gray-100"></span>
-                </div>
-                <div className="w-full h-full flex">
-                  <span className="w-fit px-2 bg-amber-100 h-full">
-                    <div className="w-[7em] h-3 rounded-full bg-white mt-3"></div>
-                    <div className="w-3/4 h-3 rounded-full bg-white mt-6"></div>
-                    <div className="w-7/12 h-3 rounded-full bg-white mt-2"></div>
-                    <div className="w-10/12 h-3 rounded-full bg-white mt-2"></div>
+          <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
+            <Link href="/developer/website">
+              <div className="w-full h-full px-6 pt-1 text-white">
+                <div className="w-full h-fit flex justify-between items-center">
+                  <h1 className="text-2xl md:text-4xl">Website</h1>
+                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                    Website
                   </span>
                 </div>
+                <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                  Natural Disaster Mitigation Application
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
+                    <div className="text-black w-full h-12 flex mb-2">
+                      <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
+                        <p className="text-lg">20.31</p>
+                      </div>
+                      <div className="h-full w-[35%]  flex items-end ">
+                        <div className="w-full h-8 bg-black rounded-full"></div>
+                      </div>
+                      <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
+                        <CellSignalHigh size={32} weight="bold" />
+                        <BatteryHigh size={32} weight="fill" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </Link>
-
-        {/* content 3 */}
-        <Link
-          href="/developer"
-          className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-teal-300 lg:col-span-6 overflow-hidden shadow-xl hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
-        >
-          <div
-            className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-teal-300 lg:col-span-6 overflow-hidden`}
-          >
-            {/* header */}
-            <div className="w-full flex justify-start items-center h-12 bg-teal-400 px-4 gap-2 rounded">
-              <Browsers size={32} />
-              <span>Front-end Developer</span>
-            </div>
-
-            {/* content */}
-            <div className="w-full h-full pl-14 pt-2">
-              <h1 className={`${zain.className} md:text-[2em]`}>
-                Applications and Website to develop your ideas
-              </h1>
-              <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
-                <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
-                  <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
-                  <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                  <span className="w-3 h-3 bg-green-400 rounded-full"></span>
-                  <span className="bg-gray-300 w-[7em] h-10 ml-2 flex items-center px-3 gap-2">
-                    <span className="w-full h-3 rounded-full bg-gray-100"></span>
-                    <span>
-                      <X size={16} color="white" weight="bold" />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide className="bg-gradient-to-b from-orange-300 to-orange-200 rounded-3xl pt-6">
+            <Link href="/developer/application">
+              <div className="w-full h-full px-6 pt-1 text-white">
+                <div className="w-full h-fit flex justify-between items-center">
+                  <h1 className="text-2xl md:text-4xl">Mobile Application</h1>
+                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                    Mobile App
+                  </span>
+                </div>
+                <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                  Traffic Awareness Raising Application
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
+                    <div className="text-black w-full h-12 flex mb-2">
+                      <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
+                        <p className="text-lg">18.05</p>
+                      </div>
+                      <div className="h-full w-[35%]  flex items-end ">
+                        <div className="w-full h-8 bg-black rounded-full"></div>
+                      </div>
+                      <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
+                        <CellSignalHigh size={32} weight="bold" />
+                        <BatteryHigh size={32} weight="fill" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide className="bg-gradient-to-b from-amber-300 to-amber-200/70 rounded-3xl pt-6">
+            <Link href="/developer/portfolio">
+              <div className="w-full h-full px-6 pt-1 text-white">
+                <div className="w-full h-fit flex justify-between items-center">
+                  <h1 className="text-2xl md:text-4xl">Portfolio</h1>
+                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                    Website
+                  </span>
+                </div>
+                <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                  Traffic Awareness Raising Application
+                </p>
+                <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
+                  <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
+                    <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
+                    <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                    <span className="w-3 h-3 bg-green-400 rounded-full"></span>
+                    <span className="bg-gray-300 w-[7em] h-10 ml-2 flex items-center px-3 gap-2">
+                      <span className="w-full h-3 rounded-full bg-gray-100"></span>
+                      <span>
+                        <X size={16} color="white" weight="bold" />
+                      </span>
                     </span>
-                  </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </Link>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide className="bg-gradient-to-b from-teal-400 to-teal-300 rounded-3xl pt-6">
+            <Link href="/scientist">
+              <div className="w-full h-full px-6 pt-1 text-white">
+                <div className="w-full h-fit flex justify-between items-center">
+                  <h1 className="text-2xl md:text-4xl">Data Scientist</h1>
+                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                    Visualization
+                  </span>
+                </div>
+                <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                  Find the best solution for your problem
+                </p>
+                <div className="w-full h-full bg-white mt-4 md:mt-12 overflow-hidden rounded-t-2xl z-20">
+                  <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-orange-200">
+                    <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
+                      <Image src="/jupyter.png" fill alt="ghazy" className="" />
+                    </div>
+                    <span className="text-xs">Jupyter</span>
+                    <span className="w-[7em] h-3 rounded-full bg-gray-100"></span>
+                    <span className="w-[5em] h-3 rounded-full bg-gray-100"></span>
+                    <span className="w-[2em] h-3 rounded-full bg-gray-100"></span>
+                  </div>
+                  <div className="pl-10 pt-4">
+                    <p className="text-xs text-black">
+                      <code>{">"} import numpy as np</code>
+                    </p>
+                    <div className="w-3/4 h-3 rounded-full bg-gray-200 mt-2"></div>
+                    <div className="w-5/6 h-3 rounded-full bg-gray-200 mt-2"></div>
+                    <div className="w-7/12 h-3 rounded-full bg-gray-200 mt-2"></div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide className="bg-gradient-to-b from-sky-400 to-sky-300 rounded-3xl pt-6">
+            <Link href="/analyst">
+              <div className="w-full h-full px-6 pt-1 text-white">
+                <div className="w-full h-fit flex justify-between items-center">
+                  <h1 className="text-2xl md:text-4xl">Data Analyst</h1>
+                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                    Visualization
+                  </span>
+                </div>
+                <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                  Build the best decision for your ideas
+                </p>
+                <div className="w-full h-full bg-white mt-4 md:mt-12 overflow-hidden rounded-t-2xl">
+                  <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-amber-200">
+                    <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
+                      <Image src="/tableau.png" fill alt="ghazy" className="" />
+                    </div>
+                    <span className="text-xs">Tableau</span>
+                    <span className="w-[4em] h-3 rounded-full bg-gray-100"></span>
+                    <span className="w-[2em] h-3 rounded-full bg-gray-100"></span>
+                    <span className="w-[6em] h-3 rounded-full bg-gray-100"></span>
+                  </div>
+                  <div className="w-full h-full flex">
+                    <span className="w-fit px-2 bg-amber-100 h-full">
+                      <div className="w-[7em] h-3 rounded-full bg-white mt-3"></div>
+                      <div className="w-3/4 h-3 rounded-full bg-white mt-6"></div>
+                      <div className="w-7/12 h-3 rounded-full bg-white mt-2"></div>
+                      <div className="w-10/12 h-3 rounded-full bg-white mt-2"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide className="bg-gradient-to-b from-fuchsia-300 to-fuchsia-200 rounded-3xl pt-6">
+            <Link href="/developer/undangan">
+              <div className="w-full h-full px-6 pt-1 text-white">
+                <div className="w-full h-fit flex justify-between items-center">
+                  <h1 className="text-2xl md:text-4xl">Undangan Digital</h1>
+                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                    Website
+                  </span>
+                </div>
+                <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
+                  Traffic Awareness Raising Application
+                </p>
+                <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
+                  <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
+                    <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
+                    <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                    <span className="w-3 h-3 bg-green-400 rounded-full"></span>
+                    <span className="bg-gray-300 w-[7em] h-10 ml-2 flex items-center px-3 gap-2">
+                      <span className="w-full h-3 rounded-full bg-gray-100"></span>
+                      <span>
+                        <X size={16} color="white" weight="bold" />
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+        </Swiper>
       </main>
 
       {/* title tools */}
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-black pb-3 bg-[#F8F4E1]`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg-[#F8F4E1]`}
       >
-        Tools in developing your ideas
+        My tools
       </h1>
 
       {/* main tools */}
@@ -262,7 +343,7 @@ export default function Product() {
 
       <Latest />
 
-      <footer className="w-full h-fit px-[2em] xl:px-[12em]">
+      <footer>
         <Footer />
       </footer>
     </section>

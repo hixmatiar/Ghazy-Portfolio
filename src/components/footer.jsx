@@ -2,6 +2,8 @@ import {
   ArrowClockwise,
   ArrowLeft,
   ArrowRight,
+  ArrowUpRight,
+  Copyright,
   DotsThreeVertical,
   GithubLogo,
   InstagramLogo,
@@ -19,82 +21,83 @@ const zain = zainLocal({
 
 export default function Footer() {
   return (
-    <div className="w-full h-fit bg-gray-200 rounded-t-3xl text-black overflow-hidden mt-[8em]">
-      <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
-        <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
-        <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-        <span className="w-3 h-3 bg-green-400 rounded-full"></span>
-        <span className="bg-gray-300 w-[7em] h-10 ml-2 flex items-center px-3 gap-2 rounded-t-xl">
-          <span className="w-full h-3 rounded-full bg-gray-100"></span>
-          <span>
-            <X size={16} color="white" weight="bold" />
-          </span>
-        </span>
-      </div>
-      <div className="w-full h-10 bg-gray-300 rounded-t-lg flex items-center gap-4 px-4">
-        <ArrowLeft size={20} />
-        <ArrowRight size={20} />
-        <ArrowClockwise size={20} />
-        <span className="w-full h-6 bg-gray-200 rounded-full px-4 text-xs flex items-center">
-          Ghazy Portfolio's
-        </span>
-        <span className="w-fit px-1.5 h-6 rounded-full bg-gray-200 flex justify-center items-center">
-          <User className="w-[12px] h-[12px]" />
-        </span>
-        <DotsThreeVertical size={20} />
-      </div>
-      <div className="w-full h-fit bg-white px-3 md:px-5">
-        {/* bagian 1 */}
-        <h1
-          className={` ${zain.className} text-2xl text-center md:text-6xl xl:text-7xl pt-6 md:pt-12`}
+    <div className="w-full h-fit text-black mt-[8em] px-[2em] xl:px-[12em]">
+      <div className="w-full h-fit flex justify-center">
+        <div
+          className={`${zain.className} w-full h-full bg-gradient-to-bl from-sky-300 to-sky-200 rounded-3xl text-[#1c3c63] lg:flex justify-between items-center p-12`}
         >
-          Let's make your idea come true
-        </h1>
-        <div className="flex justify-center items-center w-full h-fit pt-2 md:pt-4 pb-0 md:pb-4">
-          <a href="https://wa.me/628170050337">
-            <button
-              className={`${zain.className} w-fit h-fit px-6 py-2 rounded-full bg-[#F8F4E1] text-md md:text-2xl cursor-pointer`}
-            >
-              Let's Talk
-            </button>
-          </a>
+          <div className="lg:w-fit w-full h-fit">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl text-center lg:text-left">
+              Let's make your idea come true
+            </h1>
+            <h2 className="text-md md:text-lg lg:text-xl lg:mt-[-0.5em] text-center lg:text-left">
+              I'm ready to realize your ideas
+            </h2>
+          </div>
+          <div className="w-full lg:w-fit h-fit gap-3 flex justify-center mt-6 lg:mt-0">
+            <a href="https://wa.me/628170050337">
+              <button className="w-fit h-fit px-6 py-2 border-3 border-[#1c3c63] rounded-full text-[#1c3c63] cursor-pointer text-xl">
+                Let's talk
+              </button>
+            </a>
+          </div>
         </div>
-
-        <div className="flex justify-center  items-start pt-6 md:pt-12 pb-2">
-          <div className="flex gap-3 items-center">
+      </div>
+      <div className="w-full h-fit pt-12">
+        <div className="text-sm lg:flex justify-between">
+          <div className="flex gap-10 justify-center lg:justify-normal">
+            <Link href="/" className="flex items-center gap-2">
+              Home
+              <span>
+                <ArrowUpRight size={16} />
+              </span>
+            </Link>
+            <Link href="/about" className="flex items-center gap-2">
+              About
+              <span>
+                <ArrowUpRight size={16} />
+              </span>
+            </Link>
+            <Link href="/product" className="flex items-center gap-2">
+              Product
+              <span>
+                <ArrowUpRight size={16} />
+              </span>
+            </Link>
+          </div>
+          <div className="text-center mt-4 lg:mt-0">
+            <p>hikmatiarghazy@gmail.com</p>
+          </div>
+        </div>
+        <div className="w-full h-[2px] bg-gray-300 my-6"></div>
+        <div className="lg:flex justify-between items-center">
+          <div
+            className={`${zain.className} text-4xl text-center text-[#1c3c63]`}
+          >
+            M. Ghazy Hikmatiar
+          </div>
+          <div className="flex gap-3 items-center justify-center lg:justify-normal mt-3 lg:mt-0">
             <a href="https://www.linkedin.com/in/m-ghazy-hikmatiar-ba51bb349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#f8f4e1] flex items-center justify-center">
-                <LinkedinLogo className="w-[24px] h-[24px]" />
-              </span>
+              <LinkedinLogo size={30} color="black" />
             </a>
-            <a href="https://www.instagram.com/ghazyhix_/">
-              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
-                <InstagramLogo className="w-[24px] h-[24px]" />
-              </span>
+            <a href="https://www.instagram.com/ghazyhix_?igsh=dDhmbjkxMGJsa2Jw">
+              <InstagramLogo size={30} color="black" />
             </a>
-            <a href="...">
-              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
-                <YoutubeLogo className="w-[24px] h-[24px]" />
-              </span>
+            <a href="">
+              <YoutubeLogo size={30} color="black" />
             </a>
             <a href="https://github.com/hixmatiar">
-              <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F8F4E1] flex items-center justify-center">
-                <GithubLogo className="w-[24px] h-[24px]" />
-              </span>
+              <GithubLogo size={30} color="black" />
             </a>
           </div>
         </div>
-        <div className="w-full h-[2px] bg-gray-200 mt-2"></div>
-        {/* bagian 2 */}
-        <div
-          className={`${zain.className} flex justify-between items-center gap-2 pt-1 md:pt-2 pb-4`}
-        >
-          <div className="flex gap-2">
-            <h1 className="text-xs md:text-lg">Muhammad Ghazy Hikmatiar</h1>
-            <h1 className="hidden md:block">|</h1>
-            <h1 className="md:text-lg hidden md:block">Surakarta, Indonesia</h1>
-          </div>
-          <h1 className={`text-xs md:text-lg`}> hikmatiarghazy@gmail.com</h1>
+        <div className="w-full h-[2px] bg-gray-300 mt-6"></div>
+        <div className="flex justify-center items-center text-xs text-gray-400 py-3 gap-1">
+          <span>Personal portfolio </span>
+          <span>
+            <Copyright size={16} />
+          </span>
+          <span>2025</span>
         </div>
       </div>
     </div>

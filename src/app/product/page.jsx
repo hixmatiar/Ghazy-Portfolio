@@ -56,12 +56,12 @@ export default function Product() {
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Website</h1>
-                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                  <span className="text-[8px] md:text-xs border-2 rounded-full px-4 py-1">
                     Website
                   </span>
                 </div>
                 <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                  Natural Disaster Mitigation Application
+                  Show your best ideas to the world
                 </p>
                 <div className="flex justify-center w-full h-full">
                   <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
@@ -87,12 +87,12 @@ export default function Product() {
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Mobile Application</h1>
-                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                  <span className="text-[8px] md:text-xs border-2 rounded-full px-4 py-1">
                     Mobile App
                   </span>
                 </div>
                 <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                  Traffic Awareness Raising Application
+                  Show your best ideas to the world
                 </p>
                 <div className="flex justify-center w-full h-full">
                   <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
@@ -118,12 +118,12 @@ export default function Product() {
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Portfolio</h1>
-                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                  <span className="text-[8px] md:text-xs border-2 rounded-full px-4 py-1">
                     Website
                   </span>
                 </div>
                 <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                  Traffic Awareness Raising Application
+                  Show the world that you are the best
                 </p>
                 <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                   <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
@@ -146,7 +146,7 @@ export default function Product() {
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Data Scientist</h1>
-                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                  <span className="text-[8px] md:text-xs border-2 rounded-full px-4 py-1">
                     Visualization
                   </span>
                 </div>
@@ -180,7 +180,7 @@ export default function Product() {
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Data Analyst</h1>
-                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                  <span className="text-[8px] md:text-xs border-2 rounded-full px-4 py-1">
                     Visualization
                   </span>
                 </div>
@@ -214,12 +214,12 @@ export default function Product() {
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Undangan Digital</h1>
-                  <span className="text-xs border-2 rounded-full px-4 py-1">
+                  <span className="text-[8px] md:text-xs border-2 rounded-full px-4 py-1">
                     Website
                   </span>
                 </div>
                 <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                  Traffic Awareness Raising Application
+                  Invite the best guests on a beautiful day
                 </p>
                 <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                   <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">

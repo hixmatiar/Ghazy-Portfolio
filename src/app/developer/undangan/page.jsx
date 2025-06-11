@@ -10,6 +10,8 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Back from "@/components/back";
+import Scroll from "@/components/scroll";
 
 const zain = Zain({
   subsets: ["latin"],
@@ -187,7 +189,11 @@ export default function Undangan() {
             </div>
           </SwiperSlide>
         </Swiper>
+
+        <Back />
       </main>
+
+      <Scroll />
       <footer>
         <Footer />
       </footer>

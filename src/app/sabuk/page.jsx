@@ -8,48 +8,45 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Back from "@/components/back";
+import Scroll from "@/components/scroll";
 
 const zain = Zain({
   subsets: ["latin"],
   weight: ["700"],
 });
 
-export default function Siana() {
+export default function Sabuk() {
   return (
-    <section className="w-full h-fit bg-[#f8f4e1] text-black">
-      <header className="bg-gradient-to-b from-sky-300 to-[#f8f4e1]">
-        <Navbar />
+    <section className="w-full h-fit bg-vanilla text-black">
+      <header className="bg-gradient-to-b from-sky-300 to-vanilla">
+        {/* <Navbar /> */}
         <h1
-          className={` ${zain.className} w-full pt-42 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-24 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
         >
-          Siana
+          Sabuk
         </h1>
+
+        {/* <Scroll /> */}
+
         <div className={`${zain.className} text-center mt-6`}>
           <h1 className="text-xl lg:text-3xl text-[#1c3c63]">Timeline</h1>
           <h1 className="text-black text-md lg:text-xl">2024</h1>
         </div>
 
         <div className={`${zain.className} text-center mt-4 md:mt-8`}>
-          <h1 className="text-xl lg:text-3xl text-[#1c3c63]">Creator</h1>
-          <div
-            className="tooltip tooltip-bottom tooltip-accent-navy"
-            data-tip="Rafi Sakya Aji"
-          >
-            {/* <div className="flex justify-center mt-1"> */}
-            <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gray-300 rounded-full relative overflow-hidden avatar border-[#f8f4e1] border-3">
-              <Image src="/create2.png" fill alt="ghazy" />
-            </div>
-          </div>
+          <h1 className="text-xl lg:text-3xl text-accent-navy">Creator</h1>
           <div
             className="tooltip tooltip-bottom tooltip-accent-navy"
             data-tip="Muhammad Ghazy Hikmatiar"
           >
-            <div className="w-12 h-12 lg:w-16 lg:h-16 bg-amber-500 rounded-full relative overflow-hidden avatar ml-[-16px] border-[#f8f4e1] border-3">
-              <Image src="/profil.jpg" fill alt="ghazy" />
+            <div className="flex justify-center mt-1 avatar-group">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gray-300 rounded-full relative overflow-hidden flex justify-center items-center avatar border-[#f8f4e1]">
+                <Image src="/profil1.png" fill alt="ghazy" />
+              </div>
             </div>
           </div>
         </div>
-        {/* </div> */}
       </header>
 
       <main className="px-[2em] xl:px-[12em]">
@@ -73,7 +70,7 @@ export default function Siana() {
               </div>
             </div>
             <div className="w-full h-full relative">
-              <Image fill alt="ghazy" src="/sianahome.jpg" />
+              <Image fill alt="ghazy" src="/sabukhome.jpg" />
             </div>
           </div>
           {/* <div className="w-5/12 h-full bg-pink-400 hidden lg:block">
@@ -125,7 +122,7 @@ export default function Siana() {
               </div>
             </div>
             <div className="w-full h-full relative">
-              <Image fill alt="ghazy" src="/sianamitigasi.jpg" />
+              <Image fill alt="ghazy" src="/sabukjalan.jpg" />
             </div>
           </div>
 
@@ -143,7 +140,7 @@ export default function Siana() {
               </div>
             </div>
             <div className="w-full h-full relative">
-              <Image fill alt="ghazy" src="/sianapeta.jpg" />
+              <Image fill alt="ghazy" src="/sabuklapor.jpg" />
             </div>
           </div>
 
@@ -161,17 +158,14 @@ export default function Siana() {
               </div>
             </div>
             <div className="w-full h-full relative">
-              <Image fill alt="ghazy" src="/sianainfo.jpg" />
+              <Image fill alt="ghazy" src="/sabuk info.jpg" />
             </div>
           </div>
         </div>
-
-        <div className="flex justify-center w-full h-full mt-16">
-          <div className="w-full h-auto max-w-[380px] lg:max-w-[720px] bg-pink-200 flex justify-center relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
-            <Image src="/story.png" fill alt="ghazy" />
-          </div>
-        </div>
+        <Back />
       </main>
+
+      <Scroll />
 
       <footer>
         <Footer />

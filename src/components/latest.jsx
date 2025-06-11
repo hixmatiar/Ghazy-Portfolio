@@ -18,7 +18,7 @@ export default function Latest() {
   return (
     <section>
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg--[#F8F4E1]`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg--[#F8F4E1] md:text-center`}
       >
         My latest project's
       </h1>
@@ -40,7 +40,7 @@ export default function Latest() {
           className="w-full h-[16em] md:h-[24em] text-black"
         >
           <SwiperSlide className="bg-gradient-to-b from-blue-400 to-blue-300 rounded-3xl pt-6">
-            <Link href="/product/siana">
+            <Link href="/siana">
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Siana</h1>
@@ -78,7 +78,7 @@ export default function Latest() {
             </Link>
           </SwiperSlide>
           <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
-            <Link href="/product/sabuk">
+            <Link href="/sabuk">
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
                   <h1 className="text-2xl md:text-4xl">Sabuk</h1>

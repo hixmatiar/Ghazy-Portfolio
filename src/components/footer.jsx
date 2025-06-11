@@ -1,23 +1,28 @@
+"use client";
+
 import {
-  ArrowClockwise,
-  ArrowLeft,
-  ArrowRight,
-  ArrowUpRight,
   Copyright,
-  DotsThreeVertical,
   GithubLogo,
   InstagramLogo,
   LinkedinLogo,
-  User,
   YoutubeLogo,
+  Envelope,
 } from "@phosphor-icons/react/dist/ssr";
 import zainLocal from "next/font/local";
-import { X } from "@phosphor-icons/react/dist/ssr";
-import Link from "next/link";
+import toast, { Toaster } from "react-hot-toast";
 
 const zain = zainLocal({
   src: "../app/fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
 });
+
+function copy() {
+  navigator.clipboard.writeText("hikmatiarghazy@gmail.com");
+}
+
+function alert() {
+  toast.success("Email Copied");
+  copy();
+}
 
 export default function Footer() {
   return (
@@ -44,9 +49,28 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full h-fit pt-12">
-        <div className="text-sm lg:flex justify-between">
-          <div className="flex gap-10 justify-center lg:justify-normal">
-            <Link href="/" className="flex items-center gap-2">
+        <div className="text-sm flex justify-center">
+          {/* <div className="flex gap-10 justify-center lg:justify-normal"> */}
+          <button
+            onClick={alert}
+            className="border-2 border-black px-4 py-2 rounded-full cursor-pointer"
+          >
+            hikmatiarghazy@gmail.com
+          </button>
+          <Toaster
+            toastOptions={{
+              className: "",
+              style: {
+                paddingInline: "32px",
+                paddingBlock: "12px",
+                display: "flex",
+                gap: "16px",
+                borderRadius: "64px",
+                fontSize: "16px",
+              },
+            }}
+          />
+          {/* <Link href="/" className="flex items-center gap-2">
               Home
               <span>
                 <ArrowUpRight size={16} />
@@ -63,13 +87,13 @@ export default function Footer() {
               <span>
                 <ArrowUpRight size={16} />
               </span>
-            </Link>
-          </div>
-          <div className="text-center mt-4 lg:mt-0">
+            </Link> */}
+          {/* </div> */}
+          {/* <div className="text-center mt-4 lg:mt-0">
             <p>hikmatiarghazy@gmail.com</p>
-          </div>
+          </div> */}
         </div>
-        <div className="w-full h-[2px] bg-gray-300 my-6"></div>
+        <div className="w-full h-[2px] bg-gray-300 mt-3 mb-6"></div>
         <div className="lg:flex justify-between items-center">
           <div
             className={`${zain.className} text-4xl text-center text-[#1c3c63]`}
@@ -77,14 +101,14 @@ export default function Footer() {
             M. Ghazy Hikmatiar
           </div>
           <div className="flex gap-3 items-center justify-center lg:justify-normal mt-3 lg:mt-0">
-            <a href="https://www.linkedin.com/in/m-ghazy-hikmatiar-ba51bb349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-              <LinkedinLogo size={30} color="black" />
+            <a href="https://youtube.com/@ghazyhikmatiar?si=mBRf7QuSpLhnYn4q">
+              <YoutubeLogo size={30} color="black" />
             </a>
             <a href="https://www.instagram.com/ghazyhix_?igsh=dDhmbjkxMGJsa2Jw">
               <InstagramLogo size={30} color="black" />
             </a>
-            <a href="">
-              <YoutubeLogo size={30} color="black" />
+            <a href="https://www.linkedin.com/in/m-ghazy-hikmatiar-ba51bb349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <LinkedinLogo size={30} color="black" />
             </a>
             <a href="https://github.com/hixmatiar">
               <GithubLogo size={30} color="black" />

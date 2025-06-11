@@ -15,6 +15,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
+import Scroll from "@/components/scroll";
+import Back from "@/components/back";
 
 const zain = zainLocal({
   src: "../fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
@@ -24,13 +26,15 @@ export default function Developer() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
-        <Navbar />
+        {/* <Navbar /> */}
         <div
-          className={` ${zain.className} w-full pt-42 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           Front-end Developer
         </div>
       </header>
+
+      <Scroll />
 
       <main className="px-[2em] xl:px-[12em] w-full h-fit">
         {/* image hero */}
@@ -121,19 +125,19 @@ export default function Developer() {
             spaceBetween={10}
             className="w-full h-[16em] md:h-[24em] text-black"
           >
-            <SwiperSlide className="bg-gradient-to-b from-fuchsia-400 to-fuchsia-300 rounded-3xl pt-6">
+            <SwiperSlide className="bg-gradient-to-b from-fuchsia-300 to-fuchsia-200 rounded-3xl pt-6">
               <Link href="/developer/undangan">
                 <div className="w-full h-full px-6 pt-1 text-white">
                   <div className="w-full h-fit flex justify-between items-center">
                     <h1 className="text-2xl md:text-4xl">Undangan Digital</h1>
                     <span className="text-xs border-2 rounded-full px-4 py-1">
-                      Website
+                      Mobile Website
                     </span>
                   </div>
                   <p
                     className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
                   >
-                    Natural Disaster Mitigation Application
+                    Invite the best guests on a beautiful day
                   </p>
                   <div className="flex justify-center w-full h-full">
                     <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
@@ -154,11 +158,11 @@ export default function Developer() {
                 </div>
               </Link>
             </SwiperSlide>
-            <SwiperSlide className="bg-gradient-to-b from-sky-400 to-sky-300 rounded-3xl pt-6">
+            <SwiperSlide className="bg-gradient-to-b from-orange-300 to-orange-200 rounded-3xl pt-6">
               <Link href="/developer/application">
                 <div className="w-full h-full px-6 pt-1 text-white">
                   <div className="w-full h-fit flex justify-between items-center">
-                    <h1 className="text-2xl md:text-4xl">Application</h1>
+                    <h1 className="text-2xl md:text-4xl">Mobile Application</h1>
                     <span className="text-xs border-2 rounded-full px-4 py-1">
                       Mobile App
                     </span>
@@ -166,7 +170,7 @@ export default function Developer() {
                   <p
                     className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
                   >
-                    Traffic Awareness Raising Application
+                    Show your best ideas to the world
                   </p>
                   <div className="flex justify-center w-full h-full">
                     <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
@@ -187,7 +191,7 @@ export default function Developer() {
                 </div>
               </Link>
             </SwiperSlide>
-            <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
+            <SwiperSlide className="bg-gradient-to-b from-amber-300 to-amber-200/70 rounded-3xl pt-6">
               <Link href="/developer/portfolio">
                 <div className="w-full h-full px-6 pt-1 text-white">
                   <div className="w-full h-fit flex justify-between items-center">
@@ -199,7 +203,7 @@ export default function Developer() {
                   <p
                     className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
                   >
-                    Traffic Awareness Raising Application
+                    Show the world that you are the best
                   </p>
                   <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                     <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
@@ -217,7 +221,7 @@ export default function Developer() {
                 </div>
               </Link>
             </SwiperSlide>
-            <SwiperSlide className="bg-gradient-to-b from-teal-400 to-teal-300 rounded-3xl pt-6">
+            <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
               <Link href="/developer/website">
                 <div className="w-full h-full px-6 pt-1 text-white">
                   <div className="w-full h-fit flex justify-between items-center">
@@ -229,7 +233,7 @@ export default function Developer() {
                   <p
                     className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
                   >
-                    Traffic Awareness Raising Application
+                    Show your best ideas to the world
                   </p>
                   <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                     <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
@@ -249,6 +253,8 @@ export default function Developer() {
             </SwiperSlide>
           </Swiper>
         </main>
+
+        <Back />
       </main>
       <footer>
         <Footer />

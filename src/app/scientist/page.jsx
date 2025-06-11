@@ -4,6 +4,8 @@ import { ArrowLeft, Code } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
+import Scroll from "@/components/scroll";
+import Back from "@/components/back";
 
 const zain = zainLocal({
   src: "../fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
@@ -13,13 +15,14 @@ export default function Scientist() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
-        <Navbar />
         <div
-          className={` ${zain.className} w-full pt-42 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           Data Scientist
         </div>
       </header>
+
+      <Scroll />
 
       <main className="px-[2em] xl:px-[12em] w-full h-fit">
         {/* image hero */}
@@ -81,6 +84,8 @@ export default function Scientist() {
             <Image src="/jupy2.jpg" fill alt="ghazy" className="relative" />
           </div>
         </div>
+
+        <Back />
       </main>
 
       <footer>

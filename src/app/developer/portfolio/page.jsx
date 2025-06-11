@@ -10,6 +10,8 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Back from "@/components/back";
+import Scroll from "@/components/scroll";
 
 const zain = Zain({
   subsets: ["latin"],
@@ -84,7 +86,9 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <h1
+        <Back />
+
+        {/* <h1
           className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
         >
           What do you need
@@ -164,8 +168,10 @@ export default function Portfolio() {
               </div>
             </div>
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
       </main>
+
+      <Scroll />
       <footer>
         <Footer />
       </footer>

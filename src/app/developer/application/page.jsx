@@ -11,6 +11,8 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Scroll from "@/components/scroll";
+import Back from "@/components/back";
 
 const zain = Zain({
   subsets: ["latin"],
@@ -77,7 +79,10 @@ export default function Application() {
             hic quidem aliquid!
           </p>
         </div>
+        <Back />
       </main>
+
+      <Scroll />
       <footer>
         <Footer />
       </footer>

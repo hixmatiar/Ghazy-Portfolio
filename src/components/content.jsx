@@ -34,7 +34,7 @@ export default function Content() {
           {/* content */}
           <div className="w-full h-full pl-14 pt-2">
             <h1 className={`${zain.className} md:text-[2em]`}>
-              Find the best solution for your problem
+              Build the best decision for your ideas
             </h1>
             <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
               <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-orange-200">
@@ -76,7 +76,7 @@ export default function Content() {
           {/* content */}
           <div className="w-full h-full pl-14 pt-2">
             <h1 className={`${zain.className} md:text-[2em]`}>
-              Build the best decision for your ideas
+              Find the best solution for your problem
             </h1>
             <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
               <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-3 px-4 bg-amber-200">

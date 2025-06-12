@@ -26,9 +26,8 @@ export default function Developer() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
-        {/* <Navbar /> */}
         <div
-          className={` ${zain.className} w-full pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           Front-end Developer
         </div>
@@ -73,22 +72,21 @@ export default function Developer() {
         </h1>
         <div className="w-full h-fit flex flex-wrap justify-center">
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quae est, eveniet rerum non, illo numquam ducimus ipsam quisquam
-            nesciunt quo at quibusdam nemo exercitationem fugit! Nobis
-            similique, facilis aliquam soluta quidem magni dolorum aliquid?
-            Dolore maxime consectetur saepe amet consequatur, totam deleniti
-            iure. Aperiam veniam eaque autem, laborum dignissimos ipsa
-            repudiandae quam iusto reprehenderit rerum molestias, dolorum iste
-            necessitatibus sequi, culpa provident tempora corporis fugit natus
-            harum tenetur a! Vel rerum explicabo vero nisi.
+            Front-end Developer is a professional responsible for building and
+            implementing the part of an application or website that users can
+            see and interact with. Front-end developers aim to create a positive
+            user experience and an attractive and functional interface. The
+            existence of front-end developers provides many benefits, the main
+            one being branding and professional image by reflecting a positive
+            image of the company or brand.
           </p>
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus sed possimus, reprehenderit dolore ratione explicabo natus
-            omnis soluta qui id, consequuntur necessitatibus nesciunt magnam
-            veritatis distinctio eligendi deleniti corrupti aperiam, doloribus
-            hic quidem aliquid!
+            The application of front-end developers brings many benefits in
+            various fields that involve digital interaction with users, such as
+            information technology and stratups, E-commerce, finance, education,
+            health. tourism, graphic design, and game development. in this
+            digital era I am ready to realize, design, and build these
+            experiences for you, let's collaborate together.
           </p>
         </div>
 
@@ -106,7 +104,7 @@ export default function Developer() {
         <h1
           className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
         >
-          Template
+          What do you need
         </h1>
         <main className="w-full h-fit cursor-pointer">
           <Swiper

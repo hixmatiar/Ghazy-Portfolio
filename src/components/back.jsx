@@ -1,10 +1,5 @@
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
-import zainLocal from "next/font/local";
-
-const zain = zainLocal({
-  src: "../app/fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
-});
 
 export default function Back() {
   return (

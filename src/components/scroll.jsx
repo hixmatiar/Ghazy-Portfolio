@@ -24,7 +24,7 @@ export default function Scroll() {
     });
   };
   return (
-    <div className="w-full h-fit justify-center fixed z-10 bottom-5 lg:bottom-4 flex opacity-90 cursor-pointer">
+    <div className="w-full h-fit justify-center fixed z-10 bottom-5 lg:bottom-4 flex cursor-pointer">
       {Back && (
         <div
           className="w-fit h-fit p-3 rounded-full bg-accent-navy"

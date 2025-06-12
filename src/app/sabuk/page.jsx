@@ -20,9 +20,8 @@ export default function Sabuk() {
   return (
     <section className="w-full h-fit bg-vanilla text-black">
       <header className="bg-gradient-to-b from-sky-300 to-vanilla">
-        {/* <Navbar /> */}
         <h1
-          className={` ${zain.className} w-full pt-24 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
         >
           Sabuk
         </h1>
@@ -51,11 +50,6 @@ export default function Sabuk() {
 
       <main className="px-[2em] xl:px-[12em]">
         <div className="flex justify-center w-full h-full my-12 md:mt-18">
-          {/* <div className="w-5/12 h-full bg-pink-400 hidden lg:block">
-            <div>hai</div>
-            <div></div>
-            <div></div>
-          </div> */}
           <div className="w-full h-auto aspect-[9/16] bg-white max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 shadow-2xl">
             <div className="text-black w-full h-12 flex mb-2">
               <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
@@ -73,11 +67,6 @@ export default function Sabuk() {
               <Image fill alt="ghazy" src="/sabukhome.jpg" />
             </div>
           </div>
-          {/* <div className="w-5/12 h-full bg-pink-400 hidden lg:block">
-            <div>hai</div>
-            <div></div>
-            <div></div>
-          </div> */}
         </div>
 
         <h1
@@ -87,23 +76,33 @@ export default function Sabuk() {
         </h1>
         <div className="w-full h-fit flex flex-wrap justify-center">
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quae est, eveniet rerum non, illo numquam ducimus ipsam quisquam
-            nesciunt quo at quibusdam nemo exercitationem fugit! Nobis
-            similique, facilis aliquam soluta quidem magni dolorum aliquid?
-            Dolore maxime consectetur saepe amet consequatur, totam deleniti
-            iure. Aperiam veniam eaque autem, laborum dignissimos ipsa
-            repudiandae quam iusto reprehenderit rerum molestias, dolorum iste
-            necessitatibus sequi, culpa provident tempora corporis fugit natus
-            harum tenetur a! Vel rerum explicabo vero nisi.
+            Traffic accident cases in indonesia are increasing every year. there
+            are three main factors that cause traffic accidents, namely humans,
+            the environment, and vehicles. accident factors in indonesia are
+            dominated by humans, this is supported by data from the Indonesian
+            police, they say that accidents are based on a lack of public
+            awareness of traffic safety. many humans are less concerned about
+            traffic safety by not obeying traffic rules.
           </p>
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus sed possimus, reprehenderit dolore ratione explicabo natus
-            omnis soluta qui id, consequuntur necessitatibus nesciunt magnam
-            veritatis distinctio eligendi deleniti corrupti aperiam, doloribus
-            hic quidem aliquid!
+            SABUK is a mobile application as a medium to increase knowledge,
+            understanding and awareness related to integrated traffic safety and
+            fundamentally change the lifestyle of reliable and sustainable
+            traffic safety to reduce the occurrence of traffic accidents.
           </p>
+
+          <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-center text-sm/6 lg:text-lg/8 pt-12 md:pt-16">
+            Now you can only use the app on Android
+          </p>
+        </div>
+        <div className="w-full h-fit flex justify-center mt-4">
+          <a href="https://bit.ly/3YQ1yBZ?r=qr">
+            <button
+              className={`w-fit h-fit px-6 py-1 border-2 rounded-full cursor-pointer`}
+            >
+              SABUK
+            </button>
+          </a>
         </div>
 
         {/* image 1 */}

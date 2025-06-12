@@ -16,7 +16,7 @@ export default function Scientist() {
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
         <div
-          className={` ${zain.className} w-full pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           Data Scientist
         </div>
@@ -56,22 +56,23 @@ export default function Scientist() {
         </h1>
         <div className="w-full h-fit flex flex-wrap justify-center">
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quae est, eveniet rerum non, illo numquam ducimus ipsam quisquam
-            nesciunt quo at quibusdam nemo exercitationem fugit! Nobis
-            similique, facilis aliquam soluta quidem magni dolorum aliquid?
-            Dolore maxime consectetur saepe amet consequatur, totam deleniti
-            iure. Aperiam veniam eaque autem, laborum dignissimos ipsa
-            repudiandae quam iusto reprehenderit rerum molestias, dolorum iste
-            necessitatibus sequi, culpa provident tempora corporis fugit natus
-            harum tenetur a! Vel rerum explicabo vero nisi.
+            Data Science is a multidisciplinary field that combines scientific
+            methods, processes, algorithms, and systems to extract knowledge and
+            insights from data in various forms, simply put, data science is a
+            method for making better decisions based on data. with data science
+            we can create predictive models that can predict future outcomes
+            based on data, in addition with data science we can develop systems
+            that can learn from data and make decisions automatically such as
+            machine learning and deep learning. in the process there are several
+            stages, namely data collection, data cleaning, data exploration,
+            data modeling, and data visualization.
           </p>
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus sed possimus, reprehenderit dolore ratione explicabo natus
-            omnis soluta qui id, consequuntur necessitatibus nesciunt magnam
-            veritatis distinctio eligendi deleniti corrupti aperiam, doloribus
-            hic quidem aliquid!
+            The application of data science brings many benefits in various
+            fields, including economics, health, technology, government, and
+            manufacturing. with the many benefits of data science in various
+            fields, I am here to help you make the best decisions for your ideas
+            efficiently and structured. let's collaborate together.
           </p>
         </div>
 

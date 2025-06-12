@@ -40,11 +40,12 @@ export default function Home() {
           </h2>
           <div className="flex justify-center 2xl:justify-start">
             <h3
-              className={`${alata.className} text-black mt-6 w-full text-xs md:text-sm 2xl:text-md md:max-w-[448px] lg:max-w-[512px] xl:max-w-[640px] max-w-[320px]`}
+              className={`${alata.className} text-black mt-6 w-full text-xs md:text-sm 2xl:text-md md:max-w-[448px] lg:max-w-[512px] xl:max-w-[768px] max-w-[320px]`}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Blanditiis exercitationem aliquid deserunt ad iste quos
-              repudiandae ullam quia libero possimus?
+              I'am a programmer focusing on big data and front-end developer. I
+              process and visualize it to get the best solution and decision for
+              your idea. I can help you create a website and mobile application
+              to show your idea to the world.
             </h3>
           </div>
         </div>
@@ -78,7 +79,7 @@ export default function Home() {
           loop="true"
           slidesPerView="1"
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}

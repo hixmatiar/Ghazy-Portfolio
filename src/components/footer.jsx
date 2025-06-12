@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
         <div className="w-full h-[2px] bg-gray-300 mt-6"></div>
         <div className="flex justify-center items-center text-xs text-gray-400 py-3 gap-1">
-          <span>Personal portfolio </span>
+          <span>Surakarta, Indonesia ~ Personal portfolio </span>
           <span>
             <Copyright size={16} />
           </span>

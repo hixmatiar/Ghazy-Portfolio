@@ -20,9 +20,8 @@ export default function Siana() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header className="bg-gradient-to-b from-sky-300 to-[#f8f4e1]">
-        {/* <Navbar /> */}
         <h1
-          className={` ${zain.className} w-full pt-24 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
         >
           Siana
         </h1>

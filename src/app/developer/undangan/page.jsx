@@ -22,9 +22,8 @@ export default function Undangan() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
-        <Navbar />
         <div
-          className={` ${zain.className} w-full pt-42 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           Undangan Digital
         </div>

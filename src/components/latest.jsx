@@ -26,6 +26,7 @@ export default function Latest() {
         <Swiper
           loop="true"
           slidesPerView="1"
+          centeredSlides="true"
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -39,7 +40,7 @@ export default function Latest() {
           spaceBetween={10}
           className="w-full h-[16em] md:h-[24em] text-black"
         >
-          <SwiperSlide className="bg-gradient-to-b from-blue-400 to-blue-300 rounded-3xl pt-6">
+          {/* <SwiperSlide className="bg-gradient-to-b from-blue-400 to-blue-300 rounded-3xl pt-6">
             <Link href="/siana">
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
@@ -76,7 +77,7 @@ export default function Latest() {
                 </div>
               </div>
             </Link>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
             <Link href="/sabuk">
               <div className="w-full h-full px-6 pt-1 text-white">

@@ -15,9 +15,8 @@ export default function Analyst() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
-        {/* <Navbar /> */}
         <div
-          className={` ${zain.className} w-full pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           Data Analyst
         </div>
@@ -57,22 +56,22 @@ export default function Analyst() {
         </h1>
         <div className="w-full h-fit flex flex-wrap justify-center">
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quae est, eveniet rerum non, illo numquam ducimus ipsam quisquam
-            nesciunt quo at quibusdam nemo exercitationem fugit! Nobis
-            similique, facilis aliquam soluta quidem magni dolorum aliquid?
-            Dolore maxime consectetur saepe amet consequatur, totam deleniti
-            iure. Aperiam veniam eaque autem, laborum dignissimos ipsa
-            repudiandae quam iusto reprehenderit rerum molestias, dolorum iste
-            necessitatibus sequi, culpa provident tempora corporis fugit natus
-            harum tenetur a! Vel rerum explicabo vero nisi.
+            Data Analysis is a broad and interdisciplinary discipline that
+            focuses on the process of inspecting, cleaning, transforming, and
+            modeling data with the aim of finding the right solution in solving
+            a problem. data analysis provides methodological frameworks and
+            principles that are needed effectively. with data analysis we can
+            turn raw data into meaningful insights, reveal hidden patterns to
+            find the best solution, therefore we can better manage risks in the
+            future.
           </p>
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus sed possimus, reprehenderit dolore ratione explicabo natus
-            omnis soluta qui id, consequuntur necessitatibus nesciunt magnam
-            veritatis distinctio eligendi deleniti corrupti aperiam, doloribus
-            hic quidem aliquid!
+            The application of data analytics brings many benefits in various
+            fields, namely business, health, education, manufacturing,
+            government, and public policy. with the existence of data analysts
+            can solve solutions more quickly and efficiently so that it can
+            improve your business performance for the better. let's collaborate
+            together.
           </p>
         </div>
 

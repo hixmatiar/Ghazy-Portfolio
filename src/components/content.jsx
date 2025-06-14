@@ -16,7 +16,7 @@ const zain = zainLocal({
 
 export default function Content() {
   return (
-    <main className="grid grid-cols-1 lg:grid-cols-6 gap-6 w-full h-fit justify-center bg-[#F8F4E1] px-[2em] xl:px-[12em] md::mt-[4.5em] mt-[-64px] text-black">
+    <main className="grid grid-cols-1 lg:grid-cols-6 gap-6 w-full h-fit justify-center bg-[#F8F4E1] px-[2em] xl:px-[12em] lg:mt-[8em] mt-[-64px] text-black">
       {/* content 1 */}
       <Link
         href="/scientist"

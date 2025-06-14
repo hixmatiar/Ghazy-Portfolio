@@ -18,7 +18,7 @@ export default function Latest() {
   return (
     <section>
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg--[#F8F4E1] md:text-center`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg--[#F8F4E1] md:text-center`}
       >
         My latest project's
       </h1>

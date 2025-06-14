@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Zain } from "next/font/google";
 import Image from "next/image";
 import {
+  AndroidLogo,
   BatteryHigh,
   CellSignalHigh,
   GithubLogo,
@@ -91,8 +92,11 @@ export default function Sabuk() {
             traffic safety to reduce the occurrence of traffic accidents.
           </p>
 
-          <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-center text-sm/6 lg:text-lg/8 pt-12 md:pt-16">
-            Now you can only use the app on Android
+          <p className="w-full h-fit text-sm/6 lg:text-lg/8 pt-12 md:pt-16 flex justify-center gap-2">
+            Now you can only use the app on Android{" "}
+            <span className="mt-1">
+              <AndroidLogo size={24} color="black" />
+            </span>
           </p>
         </div>
         <div className="w-full h-fit flex justify-center mt-4">

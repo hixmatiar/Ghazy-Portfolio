@@ -45,8 +45,11 @@ export default function Undangan() {
                 <BatteryHigh size={32} weight="fill" />
               </div>
             </div>
-            <div className="w-full h-full relative">
-              <Image fill alt="ghazy" src="/undangan.jpg" />
+            <div className="w-full h-full flex justify-center pt-30 relative">
+              <Image src="/undangan.png" fill alt="ghazy" />
+              <div className="w-full h-fit aspect-square relative">
+                <Image fill alt="ghazy" src="/sunda.png" />
+              </div>
             </div>
           </div>
         </div>
@@ -59,22 +62,21 @@ export default function Undangan() {
         </h1>
         <div className="w-full h-fit flex flex-wrap justify-center">
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quae est, eveniet rerum non, illo numquam ducimus ipsam quisquam
-            nesciunt quo at quibusdam nemo exercitationem fugit! Nobis
-            similique, facilis aliquam soluta quidem magni dolorum aliquid?
-            Dolore maxime consectetur saepe amet consequatur, totam deleniti
-            iure. Aperiam veniam eaque autem, laborum dignissimos ipsa
-            repudiandae quam iusto reprehenderit rerum molestias, dolorum iste
-            necessitatibus sequi, culpa provident tempora corporis fugit natus
-            harum tenetur a! Vel rerum explicabo vero nisi.
+            I understand that the wedding moment is one of the most special in
+            your life. everything should be perfect and reflect your love story.
+            I will change the way you invite guests, making it more than just
+            information, but an unforgettable experience. by using digital
+            wedding invitations, you don't have to worry about the cost of
+            expensive invitation cards, digital invitations are much cheaper and
+            there are no restrictions on guests invited. attractive and
+            interactive features make a different experience on your special
+            day.
           </p>
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus sed possimus, reprehenderit dolore ratione explicabo natus
-            omnis soluta qui id, consequuntur necessitatibus nesciunt magnam
-            veritatis distinctio eligendi deleniti corrupti aperiam, doloribus
-            hic quidem aliquid!
+            Realize your dream wedding with invitations that reflect
+            seriousness, professionalism, and efficiency. I will make sure your
+            happy moments are conveyed in the most effective and memorable way
+            for all your special guests.
           </p>
         </div>
 
@@ -100,88 +102,50 @@ export default function Undangan() {
           spaceBetween={10}
           className="w-full h-[16em] md:h-[24em] text-black"
         >
-          <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
+          <SwiperSlide className="bg-gradient-to-b from-slate-300 to-slate-200 rounded-3xl pt-6">
             <div className="w-full h-full px-6 pt-1 text-white">
               <div className="w-full h-fit flex justify-between items-center">
                 <h1 className="text-2xl md:text-4xl">Sunda</h1>
-                <span className="text-xs border-2 rounded-full px-4 py-1">
-                  Website
-                </span>
               </div>
               <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
                 Natural Disaster Mitigation Application
               </p>
               <div className="flex justify-center w-full h-full">
-                <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
-                  <div className="text-black w-full h-12 flex mb-2">
-                    <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                      <p className="text-lg">20.31</p>
-                    </div>
-                    <div className="h-full w-[35%]  flex items-end ">
-                      <div className="w-full h-8 bg-black rounded-full"></div>
-                    </div>
-                    <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
-                      <CellSignalHigh size={32} weight="bold" />
-                      <BatteryHigh size={32} weight="fill" />
-                    </div>
-                  </div>
+                <div className="w-fit h-full aspect-square overflow-hidden relative">
+                  <Image src="/sunda.png" fill alt="sunda" />
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-gradient-to-b from-orange-300 to-orange-200 rounded-3xl pt-6">
+          <SwiperSlide className="bg-gradient-to-b from-[#FFA55D] to-[#F0BB78]/70 rounded-3xl pt-6">
             <div className="w-full h-full px-6 pt-1 text-white">
               <div className="w-full h-fit flex justify-between items-center">
                 <h1 className="text-2xl md:text-4xl">Jawa</h1>
-                <span className="text-xs border-2 rounded-full px-4 py-1">
-                  Mobile App
-                </span>
               </div>
               <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
                 Traffic Awareness Raising Application
               </p>
               <div className="flex justify-center w-full h-full">
-                <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
-                  <div className="text-black w-full h-12 flex mb-2">
-                    <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                      <p className="text-lg">18.05</p>
-                    </div>
-                    <div className="h-full w-[35%]  flex items-end ">
-                      <div className="w-full h-8 bg-black rounded-full"></div>
-                    </div>
-                    <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
-                      <CellSignalHigh size={32} weight="bold" />
-                      <BatteryHigh size={32} weight="fill" />
-                    </div>
+                <div className="flex justify-center w-full h-full">
+                  <div className="w-fit h-full aspect-square overflow-hidden relative">
+                    <Image src="/jawa.png" fill alt="sunda" />
                   </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-gradient-to-b from-teal-300 to-teal-200 rounded-3xl pt-6">
+          <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
             <div className="w-full h-full px-6 pt-1 text-white">
               <div className="w-full h-fit flex justify-between items-center">
                 <h1 className="text-2xl md:text-4xl">Minang</h1>
-                <span className="text-xs border-2 rounded-full px-4 py-1">
-                  Mobile App
-                </span>
               </div>
               <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
                 Traffic Awareness Raising Application
               </p>
               <div className="flex justify-center w-full h-full">
-                <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
-                  <div className="text-black w-full h-12 flex mb-2">
-                    <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                      <p className="text-lg">18.05</p>
-                    </div>
-                    <div className="h-full w-[35%]  flex items-end ">
-                      <div className="w-full h-8 bg-black rounded-full"></div>
-                    </div>
-                    <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
-                      <CellSignalHigh size={32} weight="bold" />
-                      <BatteryHigh size={32} weight="fill" />
-                    </div>
+                <div className="flex justify-center w-full h-full">
+                  <div className="w-fit h-full aspect-square overflow-hidden relative">
+                    <Image src="/minang.png" fill alt="sunda" />
                   </div>
                 </div>
               </div>

@@ -53,23 +53,8 @@ export default function Home() {
 
       <Content />
 
-      {/* <main className="py-12 md:pt-24">
-        <h1
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 md:text-center`}
-        >
-          My Experience
-        </h1>
-        <div className="flex justify-center mt-[1.5em]">
-          <ul className="steps steps-vertical px-[2em] xl:px-[12em]">
-            <li className="step"></li>
-            <li className="step"></li>
-            <li className="step"></li>
-          </ul>
-        </div>
-      </main> */}
-
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 lg:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 md:text-center`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 md:text-center`}
       >
         Let's develop your ideas
       </h1>
@@ -283,7 +268,7 @@ export default function Home() {
       <Latest />
 
       <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] py-12 md:pt-24 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg-[#F8F4E1] md:text-center`}
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg-[#F8F4E1] md:text-center`}
       >
         My tools
       </h1>

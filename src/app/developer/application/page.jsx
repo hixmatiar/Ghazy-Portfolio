@@ -36,7 +36,7 @@ export default function Application() {
           <div className="w-full h-auto aspect-[9/16] bg-white max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 shadow-2xl">
             <div className="text-black w-full h-12 flex mb-2">
               <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                <p className="text-lg">20.31</p>
+                <p className="text-lg">16.04</p>
               </div>
               <div className="h-full w-[35%]  flex items-end ">
                 <div className="w-full h-8 bg-black rounded-full"></div>
@@ -60,22 +60,17 @@ export default function Application() {
         </h1>
         <div className="w-full h-fit flex flex-wrap justify-center">
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quae est, eveniet rerum non, illo numquam ducimus ipsam quisquam
-            nesciunt quo at quibusdam nemo exercitationem fugit! Nobis
-            similique, facilis aliquam soluta quidem magni dolorum aliquid?
-            Dolore maxime consectetur saepe amet consequatur, totam deleniti
-            iure. Aperiam veniam eaque autem, laborum dignissimos ipsa
-            repudiandae quam iusto reprehenderit rerum molestias, dolorum iste
-            necessitatibus sequi, culpa provident tempora corporis fugit natus
-            harum tenetur a! Vel rerum explicabo vero nisi.
+            I understand that you may have brilliant ideas that have been tucked
+            away in the back of your mind. I will help you formulate a clear
+            concept, identify essential features, and design an interactive user
+            experience and engaging interface. With a mobile app, your business
+            or idea will be in the hands of millions of people, making you stand
+            out from the competition with innovative digital solutions.
           </p>
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus sed possimus, reprehenderit dolore ratione explicabo natus
-            omnis soluta qui id, consequuntur necessitatibus nesciunt magnam
-            veritatis distinctio eligendi deleniti corrupti aperiam, doloribus
-            hic quidem aliquid!
+            Don't let your brilliant ideas be just a dream. Let's collaborate by
+            turning your ideas into functional, impactful, and internationally
+            competitive mobile apps.
           </p>
         </div>
         <Back />

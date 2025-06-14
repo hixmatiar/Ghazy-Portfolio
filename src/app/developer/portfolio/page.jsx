@@ -44,17 +44,7 @@ export default function Portfolio() {
                 </span>
               </span>
             </div>
-            <div className="flex justify-center items-start pt-20 w-full h-auto aspect-[4/2] md:aspect-[6/2]">
-              {/* <div className="w-4/12 h-fit hidden lg:block">
-                <h1 className="text-gray-200 text-7xl text-center">Google</h1>
-                <div className="w-full h-8 rounded-full bg-gray-200 mt-12"></div>
-                <div className="w-full h-fit flex justify-center gap-4 mt-6">
-                  <span className="w-10 h-10 bg-gray-200 rounded-full"></span>
-                  <span className="w-10 h-10 bg-gray-200 rounded-full"></span>
-                  <span className="w-10 h-10 bg-gray-200 rounded-full"></span>
-                </div>
-              </div> */}
-            </div>
+            <div className="flex justify-center items-start pt-20 w-full h-auto aspect-[4/2] md:aspect-[6/2]"></div>
           </div>
         </div>
 
@@ -66,22 +56,21 @@ export default function Portfolio() {
         </h1>
         <div className="w-full h-fit flex flex-wrap justify-center">
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quae est, eveniet rerum non, illo numquam ducimus ipsam quisquam
-            nesciunt quo at quibusdam nemo exercitationem fugit! Nobis
-            similique, facilis aliquam soluta quidem magni dolorum aliquid?
-            Dolore maxime consectetur saepe amet consequatur, totam deleniti
-            iure. Aperiam veniam eaque autem, laborum dignissimos ipsa
-            repudiandae quam iusto reprehenderit rerum molestias, dolorum iste
-            necessitatibus sequi, culpa provident tempora corporis fugit natus
-            harum tenetur a! Vel rerum explicabo vero nisi.
+            I understand how important first impressions are in the competitive
+            and professional world of careers. i am here to help you reflect
+            your skills, experience, and creativity in a website portfolio. with
+            a website portfolio, you can show the world visually and
+            interactively that you are the best in your field. a professional
+            website will instantly increase your credibility. you not only show
+            your work, but also your commitment to quality, detail, and
+            innovation.
           </p>
           <p className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus sed possimus, reprehenderit dolore ratione explicabo natus
-            omnis soluta qui id, consequuntur necessitatibus nesciunt magnam
-            veritatis distinctio eligendi deleniti corrupti aperiam, doloribus
-            hic quidem aliquid!
+            By investing in a portfolio website that I build, you will get a
+            powerful personalized marketing tool working 24/7 for you. It is a
+            strategic move to enhance your image in your professional career,
+            attract better opportunities, and unequivocally show the world that
+            you are the best.
           </p>
         </div>
 

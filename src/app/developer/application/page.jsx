@@ -1,13 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { Zain } from "next/font/google";
-import { X, CellSignalHigh, BatteryHigh } from "@phosphor-icons/react/dist/ssr";
+import { CellSignalHigh, BatteryHigh } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
-import Image from "next/image";
-import Navbar from "@/components/navbar";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";

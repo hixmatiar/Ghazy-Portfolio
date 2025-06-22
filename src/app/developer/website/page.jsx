@@ -1,10 +1,7 @@
 "use client";
-import Link from "next/link";
 import { Zain } from "next/font/google";
-import { X, CellSignalHigh, BatteryHigh } from "@phosphor-icons/react/dist/ssr";
+import { X } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
-import Image from "next/image";
-import Navbar from "@/components/navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -90,7 +87,7 @@ export default function Website() {
               slidesPerView: 2,
             },
           }}
-          spaceBetween={10}
+          spaceBetween={20}
           className="w-full h-[16em] md:h-[24em] text-black"
         >
           <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
@@ -101,9 +98,6 @@ export default function Website() {
                   Website
                 </span>
               </div>
-              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                Natural Disaster Mitigation Application
-              </p>
               <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
                   <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
@@ -127,9 +121,6 @@ export default function Website() {
                   Mobile App
                 </span>
               </div>
-              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                Traffic Awareness Raising Application
-              </p>
               <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
                 <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
                   <span className="w-3 h-3 bg-rose-400 rounded-full"></span>

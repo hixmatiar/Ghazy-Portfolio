@@ -1,14 +1,17 @@
 "use client";
 import { alataLocal, zainLocal } from "next/font/local";
+import { CellSignalHigh, BatteryHigh, X } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Latest from "@/components/latest";
 import Content from "@/components/content";
+import Scroll from "@/components/scroll";
 import Image from "next/image";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import Link from "next/link";
-import { CellSignalHigh, BatteryHigh, X } from "@phosphor-icons/react/dist/ssr";
-import Scroll from "@/components/scroll";
+import SplitText from "@/components/SplitText/SplitText";
+import BlurText from "@/components/BlurText/BlurText";
+import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 
 const zain = zainLocal({
   src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
@@ -32,32 +35,62 @@ export default function Home() {
         <div
           className={`${zain.className} w-full 2xl:w-10/14 h-fit text-accent-navy px-6 text-center 2xl:text-left pt-12 2xl:pt-0`}
         >
-          <h1 className="text-[3em] md:text-[6em] lg:text-[8em] xl:text-[9em] 2xl:text-[11.5em] mt-[-42px]">
-            Hello, I'm Ghazy
+          <h1 className="text-[3em] md:text-[6em] lg:text-[8em] xl:text-[9em] 2xl:text-[11.5em] mt-[-42px] xl:ml-[-10px]">
+            <SplitText
+              text="Hello, I'm Ghazy"
+              delay={100}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+            />
           </h1>
-          <h2 className="text-[1.2em] md:text-[2em] lg:text-[2.5em] xl:text-[3em] 2xl:text-6xl mt-[-20px] md:mt-[-40px] lg:mt-[-48px] xl:mt-[-64px]">
-            Big Data & Front-end Developer
-          </h2>
+          <h1 className="text-[1.2em] md:text-[2em] lg:text-[2.5em] xl:text-[3em] 2xl:text-6xl mt-[-40px] md:mt-[-78px] lg:mt-[-106px] xl:mt-[-130px] 2xl:mt-[-160px]">
+            <SplitText
+              text="Big Data & Front-end Developer"
+              delay={100}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+            />
+          </h1>
           <div className="flex justify-center 2xl:justify-start">
-            <h3
-              className={`${alata.className} text-black mt-6 w-full text-xs md:text-sm 2xl:text-md md:max-w-[448px] lg:max-w-[512px] xl:max-w-[768px] max-w-[320px]`}
+            <h1
+              className={`${alata.className} text-black mt-6 w-full text-xs md:text-sm 2xl:text-md md:max-w-[448px] lg:max-w-[512px] xl:max-w-[768px] max-w-[320px] text-center lg:text-left`}
             >
-              I'am a programmer focusing on big data and front-end developer. I
-              process and visualize it to get the best solution and decision for
-              your idea. I can help you create a website and mobile application
-              to show your idea to the world.
-            </h3>
+              <BlurText
+                text="I'am a programmer focusing on big data and front-end developer. I process and visualize it to get the best solution and decision for your idea. I can help you create a website and mobile application to show your idea to the world."
+                delay={50}
+                animateBy="words"
+                direction="top"
+                threshold={0.1}
+                className="flex justify-center 2xl:justify-start"
+              />
+            </h1>
           </div>
         </div>
       </main>
 
       <Content />
 
-      <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 md:text-center`}
+      <div
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] md:text-center`}
       >
-        Let's develop your ideas
-      </h1>
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=40%"
+          stagger={0.03}
+        >
+          Let's develop your ideas
+        </ScrollFloat>
+      </div>
 
       <main className="w-full h-fit cursor-pointer px-[2em] xl:px-[12em]">
         <Swiper
@@ -73,7 +106,7 @@ export default function Home() {
               slidesPerView: 2,
             },
           }}
-          spaceBetween={10}
+          spaceBetween={20}
           className="w-full h-[16em] md:h-[24em] text-black"
         >
           <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
@@ -267,18 +300,26 @@ export default function Home() {
 
       <Latest />
 
-      <h1
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] pb-3 bg-[#F8F4E1] md:text-center`}
+      <div
+        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 px-[1em] md:px-[0.5em] xl:px-[2.1em] text-[#1c3c63] md:text-center`}
       >
-        My tools
-      </h1>
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=40%"
+          stagger={0.03}
+        >
+          My tools
+        </ScrollFloat>
+      </div>
 
       <main className="w-full h-fit px-[2em] xl:px-[12em] grid grid-cols-4 lg:grid-cols-6 gap-4 justify-center">
         <a
           href="https://www.microsoft.com/id-id/microsoft-365/excel"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100  hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100  hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-lg">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/excel.png" fill alt="ghazy" className="" />
             </div>
@@ -292,7 +333,7 @@ export default function Home() {
           href="https://jupyter.org/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-lg">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/jupyter.png" fill alt="ghazy" className="" />
             </div>
@@ -308,7 +349,7 @@ export default function Home() {
           href="https://www.tensorflow.org/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-lg">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/tensor.png" fill alt="ghazy" />
             </div>
@@ -324,7 +365,7 @@ export default function Home() {
           href="https://code.visualstudio.com/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-lg">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/vscode.png" fill alt="ghazy" className="" />
             </div>
@@ -338,7 +379,7 @@ export default function Home() {
           href="https://www.tableau.com/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-lg">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/tableau.png" fill alt="ghazy" className="" />
             </div>
@@ -354,7 +395,7 @@ export default function Home() {
           href="https://nextjs.org/"
           className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2"
         >
-          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-xl">
+          <div className="w-full h-[5em] md:h-[7em] rounded-3xl col-span-2 bg-gradient-to-bl from-sky-300 to-sky-100 hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer flex items-center gap-3 md:gap-8 px-4 md:px-8 shadow-lg">
             <div className="w-12 h-12 md:w-16 md:h-16 relative">
               <Image src="/next.svg" fill alt="ghazy" className="" />
             </div>

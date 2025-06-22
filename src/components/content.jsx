@@ -1,9 +1,7 @@
 import {
   Browsers,
   ChartBar,
-  Code,
   Database,
-  Table,
   X,
 } from "@phosphor-icons/react/dist/ssr";
 import { zainLocal } from "next/font/local";
@@ -16,24 +14,31 @@ const zain = zainLocal({
 
 export default function Content() {
   return (
-    <main className="grid grid-cols-1 lg:grid-cols-6 gap-6 w-full h-fit justify-center bg-[#F8F4E1] px-[2em] xl:px-[12em] lg:mt-[8em] mt-[-64px] text-black">
+    <main className="grid grid-cols-1 lg:grid-cols-6 gap-10 w-full h-fit justify-center bg-[#F8F4E1] px-[2em] xl:px-[12em] lg:mt-[8em] mt-[-64px] text-black">
       {/* content 1 */}
       <Link
         href="/scientist"
-        className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-sky-300 lg:col-span-3 overflow-hidden shadow-xl hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
+        className={`w-full h-[16em] md:h-[24em] rounded-3xl lg:col-span-3 overflow-hidden hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
       >
         <div
-          className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-sky-300 lg:col-span-3 overflow-hidden`}
+          className={`w-full h-[16em] md:h-[24em] rounded-3xl lg:col-span-3 overflow-hidden`}
         >
           {/* header */}
-          <div className="w-full flex justify-start items-center h-12 bg-sky-500 px-4 gap-2">
-            <Database size={32} />
-            <span>Data Scientist</span>
+          <div className="w-full flex justify-start items-center h-12 bg-sky-300">
+            <div className="w-fit h-full bg-vanilla flex gap-4 md:gap-2 px-4 justify-start items-center flex-nowrap rounded-br-3xl text-nowrap">
+              <Database className="md:w-8 md:h-8 w-6 h-6" />
+              <span className="text-[1.2em] md:text-[2em] mb-1">
+                Data Scientist
+              </span>
+            </div>
+            <div className="w-full h-full bg-vanilla">
+              <div className="w-full h-full rounded-tl-3xl bg-sky-300"></div>
+            </div>
           </div>
 
           {/* content */}
-          <div className="w-full h-full pl-14 pt-2">
-            <h1 className={`${zain.className} md:text-[2em]`}>
+          <div className="w-full h-full pl-14 pt-3 bg-sky-300 rounded-tl-3xl">
+            <h1 className={`${zain.className} md:text-[1.8em]`}>
               Build the best decision for your ideas
             </h1>
             <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
@@ -62,20 +67,27 @@ export default function Content() {
       {/* content 2 */}
       <Link
         href="/analyst"
-        className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-sky-300 lg:col-span-3 overflow-hidden shadow-xl hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
+        className={`w-full h-[16em] md:h-[24em] rounded-3xl lg:col-span-3 overflow-hidden hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
       >
         <div
-          className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-fuchsia-200 lg:col-span-3 overflow-hidden`}
+          className={`w-full h-[16em] md:h-[24em] rounded-3xl lg:col-span-3 overflow-hidden`}
         >
           {/* header */}
-          <div className="w-full flex justify-start items-center h-12 bg-fuchsia-300 px-4 gap-2 rounded">
-            <ChartBar size={32} />
-            <span>Data Analyst</span>
+          <div className="w-full flex justify-start items-center h-12 bg-fuchsia-300">
+            <div className="w-fit h-full bg-vanilla flex gap-4 md:gap-2 px-4 justify-start items-center flex-nowrap rounded-br-3xl text-nowrap">
+              <ChartBar className="md:w-8 md:h-8 w-6 h-6" />
+              <span className="text-[1.2em] md:text-[2em] mb-1">
+                Data Analyst
+              </span>
+            </div>
+            <div className="w-full h-full bg-vanilla">
+              <div className="w-full h-full rounded-tl-3xl bg-fuchsia-300"></div>
+            </div>
           </div>
 
           {/* content */}
-          <div className="w-full h-full pl-14 pt-2">
-            <h1 className={`${zain.className} md:text-[2em]`}>
+          <div className="w-full h-full pl-14 pt-3 bg-fuchsia-300 rounded-tl-3xl">
+            <h1 className={`${zain.className} md:text-[1.8em]`}>
               Find the best solution for your problem
             </h1>
             <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
@@ -104,20 +116,27 @@ export default function Content() {
       {/* content 3 */}
       <Link
         href="/developer"
-        className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-teal-300 lg:col-span-6 overflow-hidden shadow-xl hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
+        className={`w-full h-[16em] md:h-[24em] rounded-3xl lg:col-span-6 overflow-hidden hover:translate-1.5 transition delay-150 ease-in-out duration-100 cursor-pointer`}
       >
         <div
-          className={`w-full h-[16em] md:h-[24em] rounded-3xl bg-teal-300 lg:col-span-6 overflow-hidden`}
+          className={`w-full h-[16em] md:h-[24em] rounded-3xl lg:col-span-6 overflow-hidden`}
         >
           {/* header */}
-          <div className="w-full flex justify-start items-center h-12 bg-teal-400 px-4 gap-2 rounded">
-            <Browsers size={32} />
-            <span>Front-end Developer</span>
+          <div className="w-full flex justify-start items-center h-12 bg-teal-300">
+            <div className="w-fit h-full bg-vanilla flex gap-4 md:gap-2 px-4 justify-start items-center flex-nowrap rounded-br-3xl text-nowrap">
+              <Browsers className="md:w-8 md:h-8 w-6 h-6" />
+              <span className="text-[1.2em] md:text-[2em] mb-1">
+                Front-end Developer
+              </span>
+            </div>
+            <div className="w-full h-full bg-vanilla">
+              <div className="w-full h-full rounded-tl-3xl bg-teal-300"></div>
+            </div>
           </div>
 
           {/* content */}
-          <div className="w-full h-full pl-14 pt-2">
-            <h1 className={`${zain.className} md:text-[2em]`}>
+          <div className="w-full h-full pl-14 pt-3 bg-teal-300 rounded-tl-3xl">
+            <h1 className={`${zain.className} md:text-[1.8em]`}>
               Applications and Website to develop your ideas
             </h1>
             <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">

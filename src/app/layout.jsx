@@ -1,7 +1,5 @@
-import Back from "@/components/back";
 import "./globals.css";
 import alataLocal from "next/font/local";
-import Scroll from "@/components/scroll";
 
 const myFont = alataLocal({
   src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Alata/Alata-Regular.ttf",

@@ -27,8 +27,6 @@ export default function Sabuk() {
           Sabuk
         </h1>
 
-        {/* <Scroll /> */}
-
         <div className={`${zain.className} text-center mt-6`}>
           <h1 className="text-xl lg:text-3xl text-[#1c3c63]">Timeline</h1>
           <h1 className="text-black text-md lg:text-xl">2024</h1>

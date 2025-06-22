@@ -2,19 +2,13 @@
 
 import Link from "next/link";
 import { zainLocal } from "next/font/local";
-import {
-  ArrowLeft,
-  X,
-  BatteryHigh,
-  CellSignalHigh,
-} from "@phosphor-icons/react/dist/ssr";
+import { X, BatteryHigh, CellSignalHigh } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
-import Navbar from "@/components/navbar";
 import Scroll from "@/components/scroll";
 import Back from "@/components/back";
 
@@ -120,37 +114,34 @@ export default function Developer() {
                 slidesPerView: 2,
               },
             }}
-            spaceBetween={10}
+            spaceBetween={20}
             className="w-full h-[16em] md:h-[24em] text-black"
           >
-            <SwiperSlide className="bg-gradient-to-b from-fuchsia-300 to-fuchsia-200 rounded-3xl pt-6">
-              <Link href="/developer/undangan">
+            <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
+              <Link href="/developer/website">
                 <div className="w-full h-full px-6 pt-1 text-white">
                   <div className="w-full h-fit flex justify-between items-center">
-                    <h1 className="text-2xl md:text-4xl">Undangan Digital</h1>
+                    <h1 className="text-2xl md:text-4xl">Website</h1>
                     <span className="text-xs border-2 rounded-full px-4 py-1">
-                      Mobile Website
+                      Website
                     </span>
                   </div>
                   <p
                     className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
                   >
-                    Invite the best guests on a beautiful day
+                    Show your best ideas to the world
                   </p>
-                  <div className="flex justify-center w-full h-full">
-                    <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
-                      <div className="text-black w-full h-12 flex mb-2">
-                        <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                          <p className="text-lg">20.31</p>
-                        </div>
-                        <div className="h-full w-[35%]  flex items-end ">
-                          <div className="w-full h-8 bg-black rounded-full"></div>
-                        </div>
-                        <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
-                          <CellSignalHigh size={32} weight="bold" />
-                          <BatteryHigh size={32} weight="fill" />
-                        </div>
-                      </div>
+                  <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
+                    <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
+                      <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
+                      <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                      <span className="w-3 h-3 bg-green-400 rounded-full"></span>
+                      <span className="bg-gray-300 w-[7em] h-10 ml-2 flex items-center px-3 gap-2">
+                        <span className="w-full h-3 rounded-full bg-gray-100"></span>
+                        <span>
+                          <X size={16} color="white" weight="bold" />
+                        </span>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -219,31 +210,34 @@ export default function Developer() {
                 </div>
               </Link>
             </SwiperSlide>
-            <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
-              <Link href="/developer/website">
+            <SwiperSlide className="bg-gradient-to-b from-fuchsia-300 to-fuchsia-200 rounded-3xl pt-6">
+              <Link href="/developer/undangan">
                 <div className="w-full h-full px-6 pt-1 text-white">
                   <div className="w-full h-fit flex justify-between items-center">
-                    <h1 className="text-2xl md:text-4xl">Website</h1>
+                    <h1 className="text-2xl md:text-4xl">Undangan Digital</h1>
                     <span className="text-xs border-2 rounded-full px-4 py-1">
-                      Website
+                      Mobile Website
                     </span>
                   </div>
                   <p
                     className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
                   >
-                    Show your best ideas to the world
+                    Invite the best guests on a beautiful day
                   </p>
-                  <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
-                    <div className="flex justify-start items-center overflow-hidden w-full h-10 gap-2 px-4 bg-gray-200">
-                      <span className="w-3 h-3 bg-rose-400 rounded-full"></span>
-                      <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                      <span className="w-3 h-3 bg-green-400 rounded-full"></span>
-                      <span className="bg-gray-300 w-[7em] h-10 ml-2 flex items-center px-3 gap-2">
-                        <span className="w-full h-3 rounded-full bg-gray-100"></span>
-                        <span>
-                          <X size={16} color="white" weight="bold" />
-                        </span>
-                      </span>
+                  <div className="flex justify-center w-full h-full">
+                    <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
+                      <div className="text-black w-full h-12 flex mb-2">
+                        <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
+                          <p className="text-lg">20.31</p>
+                        </div>
+                        <div className="h-full w-[35%]  flex items-end ">
+                          <div className="w-full h-8 bg-black rounded-full"></div>
+                        </div>
+                        <div className="h-full w-[32.5%]  flex justify-end items-end px-6 gap-1 pb-0.5">
+                          <CellSignalHigh size={32} weight="bold" />
+                          <BatteryHigh size={32} weight="fill" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

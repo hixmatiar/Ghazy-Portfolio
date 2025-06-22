@@ -1,10 +1,13 @@
 "use client";
-import Link from "next/link";
 import { Zain } from "next/font/google";
-import { X, CellSignalHigh, BatteryHigh } from "@phosphor-icons/react/dist/ssr";
+import {
+  X,
+  CellSignalHigh,
+  BatteryHigh,
+  ArrowUpRight,
+} from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Image from "next/image";
-import Navbar from "@/components/navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -99,49 +102,73 @@ export default function Undangan() {
               slidesPerView: 2,
             },
           }}
-          spaceBetween={10}
+          spaceBetween={20}
           className="w-full h-[16em] md:h-[24em] text-black"
         >
-          <SwiperSlide className="bg-gradient-to-b from-slate-300 to-slate-200 rounded-3xl pt-6">
+          <SwiperSlide className="bg-gradient-to-b from-slate-300 to-slate-200 rounded-3xl pt-4 cursor-pointer">
+            <a href=""></a>
             <div className="w-full h-full px-6 pt-1 text-white">
               <div className="w-full h-fit flex justify-between items-center">
-                <h1 className="text-2xl md:text-4xl">Sunda</h1>
+                <h1 className={`${zain.className} text-3xl md:text-5xl mt-1`}>
+                  Sunda
+                </h1>
+                <button className="flex gap-2 px-4 py-[6px] rounded-full border-2 items-center text-xs cursor-pointer">
+                  See more{" "}
+                  <span>
+                    <ArrowUpRight size={14} />
+                  </span>
+                </button>
               </div>
-              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                Natural Disaster Mitigation Application
-              </p>
-              <div className="flex justify-center w-full h-full">
-                <div className="w-fit h-full aspect-square overflow-hidden relative">
+              <div className="flex justify-center w-full h-full mt-[-28px]">
+                <div className="w-fit h-full aspect-square overflow-hidden relative flex justify-center">
+                  <div className="flex justify-center w-1/2 h-auto relative aspect-square">
+                    <Image
+                      src="/bgsunda.webp"
+                      fill
+                      alt="ghazy"
+                      className="mt-8 opacity-35 pb-16"
+                    />
+                  </div>
                   <Image src="/sunda.png" fill alt="sunda" />
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-gradient-to-b from-[#FFA55D] to-[#F0BB78]/70 rounded-3xl pt-6">
+          <SwiperSlide className="bg-gradient-to-b from-[#FFA55D] to-[#F0BB78]/70 rounded-3xl pt-4 cursor-pointer">
             <div className="w-full h-full px-6 pt-1 text-white">
               <div className="w-full h-fit flex justify-between items-center">
-                <h1 className="text-2xl md:text-4xl">Jawa</h1>
+                <h1
+                  className={` ${zain.className} text-3xl md:text-5xl text-black mt-1`}
+                >
+                  Jawa
+                </h1>
+                <button className="flex gap-2 px-4 py-[6px] rounded-full border-2 items-center text-xs border-black text-black cursor-pointer">
+                  See more{" "}
+                  <span>
+                    <ArrowUpRight size={14} color="black" />
+                  </span>
+                </button>
               </div>
-              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                Traffic Awareness Raising Application
-              </p>
-              <div className="flex justify-center w-full h-full">
+              <div className="flex justify-center w-full h-full mt-[-28px]">
                 <div className="flex justify-center w-full h-full">
                   <div className="w-fit h-full aspect-square overflow-hidden relative">
+                    <Image
+                      src="/bgjawa.png"
+                      fill
+                      alt="ghazy"
+                      className="mt-8 opacity-20 pb-14"
+                    />
                     <Image src="/jawa.png" fill alt="sunda" />
                   </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
+          {/* <SwiperSlide className="bg-gradient-to-b from-rose-400 to-rose-300 rounded-3xl pt-6">
             <div className="w-full h-full px-6 pt-1 text-white">
               <div className="w-full h-fit flex justify-between items-center">
                 <h1 className="text-2xl md:text-4xl">Minang</h1>
               </div>
-              <p className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}>
-                Traffic Awareness Raising Application
-              </p>
               <div className="flex justify-center w-full h-full">
                 <div className="flex justify-center w-full h-full">
                   <div className="w-fit h-full aspect-square overflow-hidden relative">
@@ -150,7 +177,7 @@ export default function Undangan() {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
 
         <Back />

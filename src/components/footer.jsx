@@ -6,7 +6,6 @@ import {
   InstagramLogo,
   LinkedinLogo,
   YoutubeLogo,
-  Envelope,
 } from "@phosphor-icons/react/dist/ssr";
 import zainLocal from "next/font/local";
 import toast, { Toaster } from "react-hot-toast";
@@ -70,28 +69,6 @@ export default function Footer() {
               },
             }}
           />
-          {/* <Link href="/" className="flex items-center gap-2">
-              Home
-              <span>
-                <ArrowUpRight size={16} />
-              </span>
-            </Link>
-            <Link href="/about" className="flex items-center gap-2">
-              About
-              <span>
-                <ArrowUpRight size={16} />
-              </span>
-            </Link>
-            <Link href="/product" className="flex items-center gap-2">
-              Product
-              <span>
-                <ArrowUpRight size={16} />
-              </span>
-            </Link> */}
-          {/* </div> */}
-          {/* <div className="text-center mt-4 lg:mt-0">
-            <p>hikmatiarghazy@gmail.com</p>
-          </div> */}
         </div>
         <div className="w-full h-[2px] bg-gray-300 mt-3 mb-6"></div>
         <div className="lg:flex justify-between items-center">

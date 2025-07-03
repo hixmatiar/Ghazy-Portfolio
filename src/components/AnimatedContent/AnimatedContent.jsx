@@ -1,5 +1,4 @@
 "use client";
-
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -45,7 +44,7 @@ const AnimatedContent = ({
       delay,
       onComplete,
       scrollTrigger: {
-        trigger: el,
+        trigger: `el`,
         start: `top ${startPct}%`,
         toggleActions: "play none none none",
         once: true,

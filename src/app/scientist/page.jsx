@@ -36,27 +36,39 @@ export default function Scientist() {
 
       <main className="px-[2em] xl:px-[12em] w-full h-fit">
         {/* image hero */}
-        <div className="w-full h-auto">
-          <div className="w-full h-auto bg-white mt-6 overflow-hidden rounded-2xl">
-            <div className="flex justify-start items-center overflow-hidden w-full h-10 md:h-12 gap-3 md:gap-5 px-4 bg-orange-200">
-              <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
-                <Image src="/jupyter.png" fill alt="ghazy" className="" />
+        <AnimatedContent
+          distance={50}
+          direction="vertical"
+          reverse={false}
+          duration={1.2}
+          initialOpacity={0.2}
+          animateOpacity
+          scale={1.1}
+          threshold={0.2}
+          delay={0.3}
+        >
+          <div className="w-full h-auto">
+            <div className="w-full h-auto bg-white mt-6 overflow-hidden rounded-2xl">
+              <div className="flex justify-start items-center overflow-hidden w-full h-10 md:h-12 gap-3 md:gap-5 px-4 bg-orange-200">
+                <div className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] relative">
+                  <Image src="/jupyter.png" fill alt="ghazy" className="" />
+                </div>
+                <span className="text-xs md:text-lg">Jupyter</span>
+                <span className="w-[7em] h-3 rounded-full bg-gray-100"></span>
+                <span className="w-[5em] h-3 rounded-full bg-gray-100"></span>
+                <span className="w-[2em] h-3 rounded-full bg-gray-100"></span>
               </div>
-              <span className="text-xs md:text-lg">Jupyter</span>
-              <span className="w-[7em] h-3 rounded-full bg-gray-100"></span>
-              <span className="w-[5em] h-3 rounded-full bg-gray-100"></span>
-              <span className="w-[2em] h-3 rounded-full bg-gray-100"></span>
-            </div>
-            <div className="pl-10 pt-4 w-full h-auto aspect-[4/2] md:aspect-[6/2]">
-              <p className="text-xs md:text-sm">
-                <code>{">"} import numpy as np</code>
-              </p>
-              <div className="w-3/4 h-3 rounded-full bg-gray-200 mt-3"></div>
-              <div className="w-5/6 h-3 rounded-full bg-gray-200 mt-3"></div>
-              <div className="w-7/12 h-3 rounded-full bg-gray-200 mt-3"></div>
+              <div className="pl-10 pt-4 w-full h-auto aspect-[4/2] md:aspect-[6/2]">
+                <p className="text-xs md:text-sm">
+                  <code>{">"} import numpy as np</code>
+                </p>
+                <div className="w-3/4 h-3 rounded-full bg-gray-200 mt-3"></div>
+                <div className="w-5/6 h-3 rounded-full bg-gray-200 mt-3"></div>
+                <div className="w-7/12 h-3 rounded-full bg-gray-200 mt-3"></div>
+              </div>
             </div>
           </div>
-        </div>
+        </AnimatedContent>
 
         {/* overview */}
         <div
@@ -72,7 +84,7 @@ export default function Scientist() {
             Overview
           </ScrollFloat>
         </div>
-        <div className="w-full h-fit flex flex-wrap justify-center">
+        <div className="w-full h-fit flex flex-wrap justify-center mt-[-32px]">
           <div className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8">
             <ScrollReveal
               baseOpacity={0}
@@ -92,7 +104,7 @@ export default function Scientist() {
               cleaning, data exploration, data modeling, and data visualization.
             </ScrollReveal>
           </div>
-          <div className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 pt-8 md:pt-12">
+          <div className="w-full max-w-[500px] md:max-w-[800px] h-fit text-justify text-sm/6 lg:text-lg/8 mt-[-16px]">
             <ScrollReveal
               baseOpacity={0.5}
               enableBlur={true}

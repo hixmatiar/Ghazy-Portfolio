@@ -7,7 +7,7 @@ const myFont = alataLocal({
 
 export const metadata = {
   title: "Ghazy Portfolio's",
-  description: "---",
+  description: "A Programmer Big Data & Front-end Developer",
 };
 
 export default function RootLayout({ children }) {

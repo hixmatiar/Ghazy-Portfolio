@@ -8,6 +8,7 @@ import {
   YoutubeLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import zainLocal from "next/font/local";
+import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 
 const zain = zainLocal({
@@ -70,12 +71,17 @@ export default function Footer() {
             }}
           />
         </div>
-        <div className="w-full h-[2px] bg-gray-300 mt-3 mb-6"></div>
+        <div className="w-full h-[2px] bg-gray-300 mt-3 mb-3"></div>
         <div className="lg:flex justify-between items-center">
-          <div
-            className={`${zain.className} text-4xl text-center text-[#1c3c63]`}
-          >
-            M. Ghazy Hikmatiar
+          <div className="w-full md:w-fit h-fit flex items-center justify-center">
+            <div className="w-fit h-fit relative p-8 hidden md:block">
+              <Image src="/logoo.png" fill alt="logo" />
+            </div>
+            <p
+              className={`${zain.className} text-4xl text-center text-[#1c3c63] mt-2`}
+            >
+              M. Ghazy Hikmatiar
+            </p>
           </div>
           <div className="flex gap-3 items-center justify-center lg:justify-normal mt-3 lg:mt-0">
             <a href="https://youtube.com/@ghazyhikmatiar?si=mBRf7QuSpLhnYn4q">
@@ -92,7 +98,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="w-full h-[2px] bg-gray-300 mt-6"></div>
+        <div className="w-full h-[2px] bg-gray-300 mt-3"></div>
         <div className="flex justify-center items-center text-xs text-gray-400 py-3 gap-1">
           <span>Surakarta, Indonesia ~ Personal portfolio </span>
           <span>

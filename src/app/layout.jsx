@@ -1,8 +1,9 @@
 import "./globals.css";
-import alataLocal from "next/font/local";
+import Alata from "next/font/google";
 
-const myFont = alataLocal({
-  src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Alata/Alata-Regular.ttf",
+const myFont = Alata({
+  subsets: ["latin"],
+  weight: ["500"],
 });
 
 export const metadata = {

@@ -251,7 +251,7 @@ export default function Developer() {
                       <div className="w-full h-full bg-white mt-4 md:mt-12 max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 z-">
                         <div className="text-black w-full h-12 flex mb-2">
                           <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                            <p className="text-lg">18.05</p>
+                            <p className="text-lg">20.31</p>
                           </div>
                           <div className="h-full w-[35%]  flex items-end ">
                             <div className="w-full h-8 bg-black rounded-full"></div>

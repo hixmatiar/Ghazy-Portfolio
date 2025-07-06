@@ -55,8 +55,8 @@ export default function Application() {
           <div className="flex justify-center w-full h-full my-12 md:mt-18">
             <div className="w-full h-auto aspect-[9/16] bg-white max-w-[380px] border-black rounded-[64px] overflow-hidden border-6 shadow-2xl">
               <div className="text-black w-full h-12 flex mb-2">
-                <div className="h-full w-[32.5%]  flex items-end px-6 pb-0.5">
-                  <p className="text-lg">16.04</p>
+                <div className="h-full w-[32.5%]  flex items-end px-6 pb-1">
+                  <p className="text-md">16.04</p>
                 </div>
                 <div className="h-full w-[35%]  flex items-end ">
                   <div className="w-full h-8 bg-black rounded-full"></div>

@@ -1,5 +1,6 @@
 import "./globals.css";
 import Alata from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 
 const myFont = Alata({
   src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Alata/Alata-Regular.ttf",

@@ -73,7 +73,7 @@ export default function Analyst() {
 
         {/* overview */}
         <div
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
+          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}

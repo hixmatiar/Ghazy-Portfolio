@@ -3,6 +3,7 @@
 import { Zain } from "next/font/google";
 import { CellSignalHigh, BatteryHigh } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -65,8 +66,10 @@ export default function Application() {
                   <BatteryHigh size={32} weight="fill" />
                 </div>
               </div>
-              <div className="w-full h-full relative">
-                {/* <Image fill alt="ghazy" src="/sianahome.jpg" /> */}
+              <div className="w-full h-full bg-white flex justify-center items-center">
+                <div className="w-[256px] h-[256px] relative mt-[-64px]">
+                  <Image fill alt="ghazy" src="/logos.png" />
+                </div>
               </div>
             </div>
           </div>

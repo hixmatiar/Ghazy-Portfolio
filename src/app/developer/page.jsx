@@ -295,7 +295,7 @@ export default function Developer() {
                   </div>
                 </Link>
               </SwiperSlide>
-              <SwiperSlide className="bg-gradient-to-b from-fuchsia-300 to-fuchsia-200 rounded-3xl pt-6">
+              {/* <SwiperSlide className="bg-gradient-to-b from-fuchsia-300 to-fuchsia-200 rounded-3xl pt-6">
                 <Link href="/developer/undangan">
                   <div className="w-full h-full px-6 pt-1 text-white">
                     <div className="w-full h-fit flex justify-between items-center">
@@ -327,7 +327,7 @@ export default function Developer() {
                     </div>
                   </div>
                 </Link>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </main>
         </AnimatedContent>

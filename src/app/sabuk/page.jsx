@@ -1,4 +1,4 @@
-import Zain from "next/font/google";
+// import Zain from "next/font/google";
 import Image from "next/image";
 import {
   AndroidLogo,
@@ -15,17 +15,17 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-const zain = Zain({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const zain = Zain({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 export default function Sabuk() {
   return (
     <section className="w-full h-fit bg-vanilla text-black">
       <header className="bg-gradient-to-b from-sky-300 to-vanilla">
         <h1
-          className={` ${zain.className} w-full pt-12 lg:pt-24 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
+          className={` w-full pt-12 lg:pt-24 flex justify-center items-center text-7xl lg:text-9xl text-[#1c3c63]`}
         >
           <SplitText
             text="Sabuk"
@@ -39,7 +39,7 @@ export default function Sabuk() {
           />
         </h1>
 
-        <div className={`${zain.className} text-center mt-6`}>
+        <div className={` text-center mt-6`}>
           <h1 className="text-xl lg:text-3xl text-[#1c3c63]">
             <SplitText
               text="Timeline"
@@ -67,7 +67,7 @@ export default function Sabuk() {
           </h1>
         </div>
 
-        <div className={`${zain.className} text-center mt-4 md:mt-8`}>
+        <div className={` text-center mt-4 md:mt-8`}>
           <h1 className="text-xl lg:text-3xl text-accent-navy">
             {" "}
             <SplitText
@@ -140,7 +140,7 @@ export default function Sabuk() {
         </AnimatedContent>
 
         <div
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-6 md:pt-8 md:text-center text-[#1c3c63]`}
+          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-6 md:pt-8 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}

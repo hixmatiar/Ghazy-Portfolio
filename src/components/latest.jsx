@@ -8,11 +8,12 @@ import ScrollFloat from "./ScrollFloat/ScrollFloat";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
-import zainLocal from "next/font/local";
+import Zain from "next/font/google";
 import AnimatedContent from "./AnimatedContent/AnimatedContent";
 
-const zain = zainLocal({
-  src: "../app/fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export default function Latest() {

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { zainLocal } from "next/font/local";
+import { Zain } from "next/font/google";
 import { X, BatteryHigh, CellSignalHigh } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,8 +16,9 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-const zain = zainLocal({
-  src: "../fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export default function Developer() {

@@ -1,4 +1,4 @@
-import zainLocal from "next/font/local";
+import Zain from "next/font/google";
 import Image from "next/image";
 import {
   AndroidLogo,
@@ -15,8 +15,9 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-const zain = zainLocal({
-  src: "../fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export default function Sabuk() {

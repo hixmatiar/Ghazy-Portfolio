@@ -7,12 +7,13 @@ import {
   LinkedinLogo,
   YoutubeLogo,
 } from "@phosphor-icons/react/dist/ssr";
-import zainLocal from "next/font/local";
+import Zain from "next/font/google";
 import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 
-const zain = zainLocal({
-  src: "../app/fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 function copy() {

@@ -4,13 +4,14 @@ import {
   Database,
   X,
 } from "@phosphor-icons/react/dist/ssr";
-import { zainLocal } from "next/font/local";
+import { Zain } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedContent from "./AnimatedContent/AnimatedContent";
 
-const zain = zainLocal({
-  src: "../app/fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export default function Content() {

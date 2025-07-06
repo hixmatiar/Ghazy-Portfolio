@@ -1,5 +1,5 @@
 "use client";
-import { alataLocal, zainLocal } from "next/font/local";
+import { Zain } from "next/font/google";
 import { CellSignalHigh, BatteryHigh, X } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Latest from "@/components/latest";
@@ -14,12 +14,9 @@ import BlurText from "@/components/BlurText/BlurText";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 
-const zain = zainLocal({
-  src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
-});
-
-const alata = alataLocal({
-  src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Alata/Alata-Regular.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export default function Home() {

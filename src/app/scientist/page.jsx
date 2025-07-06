@@ -1,4 +1,4 @@
-import { zainLocal } from "next/font/local";
+import { Zain } from "next/font/google";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import Scroll from "@/components/scroll";
@@ -8,8 +8,9 @@ import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 
-const zain = zainLocal({
-  src: "../fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export default function Scientist() {

@@ -20,10 +20,10 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-// const zain = Zain({
-//   subsets: ["latin"],
-//   weight: ["700"],
-// });
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function Undangan() {
   return (

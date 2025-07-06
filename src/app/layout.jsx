@@ -1,8 +1,8 @@
 import "./globals.css";
-import Zain from "next/font/local";
+import Alata from "next/font/local";
 
-const myFont = Zain({
-  src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Zain/Zain-Bold.ttf",
+const myFont = Alata({
+  src: "./fonts/Alata,Geist,Geist_Mono,JetBrains_Mono/Alata/Alata-Regular.ttf",
 });
 
 export const metadata = {

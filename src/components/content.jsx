@@ -4,15 +4,15 @@ import {
   Database,
   X,
 } from "@phosphor-icons/react/dist/ssr";
-// import { Zain } from "next/font/google";
+import { Zain } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedContent from "./AnimatedContent/AnimatedContent";
 
-// const zain = Zain({
-//   subsets: ["latin"],
-//   weight: ["700"],
-// });
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function Content() {
   return (
@@ -51,7 +51,7 @@ export default function Content() {
 
             {/* content */}
             <div className="w-full h-full pl-14 pt-3 bg-sky-300 rounded-tl-3xl">
-              <h1 className={` md:text-[1.8em]`}>
+              <h1 className={`${zain.className} md:text-[1.8em]`}>
                 Build the best decision for your ideas
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
@@ -100,7 +100,7 @@ export default function Content() {
 
             {/* content */}
             <div className="w-full h-full pl-14 pt-3 bg-fuchsia-300 rounded-tl-3xl">
-              <h1 className={` md:text-[1.8em]`}>
+              <h1 className={`${zain.className} md:text-[1.8em]`}>
                 Find the best solution for your problem
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">
@@ -149,7 +149,7 @@ export default function Content() {
 
             {/* content */}
             <div className="w-full h-full pl-14 pt-3 bg-teal-300 rounded-tl-3xl">
-              <h1 className={` md:text-[1.8em]`}>
+              <h1 className={`${zain.className} md:text-[1.8em]`}>
                 Applications and Website to develop your ideas
               </h1>
               <div className="w-full h-full bg-white mt-6 overflow-hidden rounded-tl-2xl">

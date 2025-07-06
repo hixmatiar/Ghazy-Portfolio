@@ -1,6 +1,6 @@
 "use client";
 
-// import { Zain } from "next/font/google";
+import { Zain } from "next/font/google";
 import { CellSignalHigh, BatteryHigh } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Image from "next/image";
@@ -14,17 +14,17 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-// const zain = Zain({
-//   subsets: ["latin"],
-//   weight: ["700"],
-// });
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function Application() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
         <div
-          className={` w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           <SplitText
             text="Mobile Application"
@@ -77,7 +77,7 @@ export default function Application() {
 
         {/* overview */}
         <div
-          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-2 md:pt-4 md:text-center text-[#1c3c63]`}
+          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-2 md:pt-4 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}

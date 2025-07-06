@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-// import { Zain } from "next/font/google";
+import { Zain } from "next/font/google";
 import { X, BatteryHigh, CellSignalHigh } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,17 +16,17 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-// const zain = Zain({
-//   subsets: ["latin"],
-//   weight: ["700"],
-// });
+const zain = Zain({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function Developer() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
         <div
-          className={` w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           <SplitText
             text="Front-end Developer"
@@ -86,7 +86,7 @@ export default function Developer() {
 
         {/* overview */}
         <div
-          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
+          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}
@@ -161,7 +161,7 @@ export default function Developer() {
 
         {/* template */}
         <div
-          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
+          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}
@@ -210,7 +210,9 @@ export default function Developer() {
                         Website
                       </span>
                     </div>
-                    <p className={`text-sm md:text-2xl md:mt-1 `}>
+                    <p
+                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
+                    >
                       Show your best ideas to the world
                     </p>
                     <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
@@ -240,7 +242,9 @@ export default function Developer() {
                         Mobile App
                       </span>
                     </div>
-                    <p className={`text-sm md:text-2xl md:mt-1 `}>
+                    <p
+                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
+                    >
                       Show your best ideas to the world
                     </p>
                     <div className="flex justify-center w-full h-full">
@@ -271,7 +275,9 @@ export default function Developer() {
                         Website
                       </span>
                     </div>
-                    <p className={`text-sm md:text-2xl md:mt-1`}>
+                    <p
+                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
+                    >
                       Show the world that you are the best
                     </p>
                     <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">

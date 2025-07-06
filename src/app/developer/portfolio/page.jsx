@@ -1,5 +1,5 @@
 "use client";
-import { Zain } from "next/font/google";
+// import { Zain } from "next/font/google";
 import {
   ArrowClockwise,
   ArrowLeft,
@@ -22,17 +22,17 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-const zain = Zain({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const zain = Zain({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 export default function Portfolio() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
         <div
-          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={`  w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           <SplitText
             text="Portfolio"
@@ -83,9 +83,7 @@ export default function Portfolio() {
                   <div className="w-full h-6 bg-gray-200 rounded-full flex justify-between px-2 items-center">
                     <div className="flex gap-2 items-center">
                       <WarningCircle size={14} />
-                      <p className={`${zain.className} mt-1 text-xs`}>
-                        Ghazy Portfolio's
-                      </p>
+                      <p className={` mt-1 text-xs`}>Ghazy Portfolio's</p>
                     </div>
                     <Star size={14} />
                   </div>
@@ -103,7 +101,7 @@ export default function Portfolio() {
 
         {/* overview */}
         <div
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
+          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-12 md:pt-24 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}

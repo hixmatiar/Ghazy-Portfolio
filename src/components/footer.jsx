@@ -7,14 +7,14 @@ import {
   LinkedinLogo,
   YoutubeLogo,
 } from "@phosphor-icons/react/dist/ssr";
-import Zain from "next/font/google";
+// import Zain from "next/font/google";
 import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 
-const zain = Zain({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const zain = Zain({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 function copy() {
   navigator.clipboard.writeText("hikmatiarghazy@gmail.com");
@@ -30,7 +30,7 @@ export default function Footer() {
     <div className="w-full h-fit text-black mt-[8em] px-[2em] xl:px-[12em]">
       <div className="w-full h-fit flex justify-center">
         <div
-          className={`${zain.className} w-full h-full bg-gradient-to-bl from-sky-300 to-sky-200 rounded-3xl text-[#1c3c63] lg:flex justify-between items-center p-12`}
+          className={` w-full h-full bg-gradient-to-bl from-sky-300 to-sky-200 rounded-3xl text-[#1c3c63] lg:flex justify-between items-center p-12`}
         >
           <div className="lg:w-fit w-full h-fit">
             <h1 className="text-3xl md:text-5xl lg:text-7xl text-center lg:text-left">
@@ -78,9 +78,7 @@ export default function Footer() {
             <div className="w-fit h-fit relative p-8 hidden md:block">
               <Image src="/logoo.png" fill alt="logo" />
             </div>
-            <p
-              className={`${zain.className} text-4xl text-center text-[#1c3c63] mt-2`}
-            >
+            <p className={` text-4xl text-center text-[#1c3c63] mt-2`}>
               M. Ghazy Hikmatiar
             </p>
           </div>

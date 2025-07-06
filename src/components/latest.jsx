@@ -8,19 +8,19 @@ import ScrollFloat from "./ScrollFloat/ScrollFloat";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
-import Zain from "next/font/google";
+// import Zain from "next/font/google";
 import AnimatedContent from "./AnimatedContent/AnimatedContent";
 
-const zain = Zain({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const zain = Zain({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 export default function Latest() {
   return (
     <section>
       <div
-        className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 xl:px-[2.1em] text-[#1c3c63] md:text-center`}
+        className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 xl:px-[2.1em] text-[#1c3c63] md:text-center`}
       >
         <ScrollFloat
           animationDuration={1}
@@ -70,9 +70,7 @@ export default function Latest() {
                       Mobile App
                     </span>
                   </div>
-                  <p
-                    className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
-                  >
+                  <p className={`text-sm md:text-2xl md:mt-1 `}>
                     Traffic Awareness Raising Application
                   </p>
                   <div className="flex justify-center w-full h-full">

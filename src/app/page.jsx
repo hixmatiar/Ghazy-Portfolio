@@ -1,5 +1,5 @@
 "use client";
-import { Zain } from "next/font/google";
+// import { Zain } from "next/font/google";
 import { CellSignalHigh, BatteryHigh, X } from "@phosphor-icons/react/dist/ssr";
 import Footer from "@/components/footer";
 import Latest from "@/components/latest";
@@ -14,10 +14,10 @@ import BlurText from "@/components/BlurText/BlurText";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 
-const zain = Zain({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const zain = Zain({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className={`${zain.className} w-full 2xl:w-10/14 h-fit text-accent-navy px-6 text-center 2xl:text-left pt-12 2xl:pt-0`}
+          className={` w-full 2xl:w-10/14 h-fit text-accent-navy px-6 text-center 2xl:text-left pt-12 2xl:pt-0`}
         >
           <h1 className="text-[3em] md:text-[6em] lg:text-[8em] xl:text-[9em] 2xl:text-[11.5em] mt-[-42px] xl:ml-[-10px]">
             <SplitText
@@ -59,7 +59,7 @@ export default function Home() {
           </h1>
           <div className="flex justify-center 2xl:justify-start">
             <h1
-              className={`${alata.className} text-black mt-6 w-full text-xs md:text-sm 2xl:text-md md:max-w-[448px] lg:max-w-[512px] xl:max-w-[768px] max-w-[320px] text-center lg:text-left`}
+              className={` text-black mt-6 w-full text-xs md:text-sm 2xl:text-md md:max-w-[448px] lg:max-w-[512px] xl:max-w-[768px] max-w-[320px] text-center lg:text-left`}
             >
               <BlurText
                 text="I'am a programmer focusing on big data and front-end developer. I process and visualize it to get the best solution and decision for your idea. I can help you create a website and mobile application to show your idea to the world."
@@ -78,7 +78,7 @@ export default function Home() {
         <Content />
 
         <div
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 xl:px-[2.1em] text-[#1c3c63] md:text-center`}
+          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 xl:px-[2.1em] text-[#1c3c63] md:text-center`}
         >
           <ScrollFloat
             animationDuration={1}
@@ -128,9 +128,7 @@ export default function Home() {
                         Website
                       </span>
                     </div>
-                    <p
-                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
-                    >
+                    <p className={`text-sm md:text-2xl md:mt-1 `}>
                       Show your best ideas to the world
                     </p>
                     <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
@@ -160,9 +158,7 @@ export default function Home() {
                         Mobile App
                       </span>
                     </div>
-                    <p
-                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
-                    >
+                    <p className={`text-sm md:text-2xl md:mt-1 `}>
                       Show your best ideas to the world
                     </p>
                     <div className="flex justify-center w-full h-full">
@@ -193,9 +189,7 @@ export default function Home() {
                         Website
                       </span>
                     </div>
-                    <p
-                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
-                    >
+                    <p className={`text-sm md:text-2xl md:mt-1`}>
                       Show the world that you are the best
                     </p>
                     <div className="w-full h-full bg-white mt-6 md:mt-12 overflow-hidden rounded-t-2xl">
@@ -223,9 +217,7 @@ export default function Home() {
                         Visualization
                       </span>
                     </div>
-                    <p
-                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
-                    >
+                    <p className={`text-sm md:text-2xl md:mt-1`}>
                       Find the best solution for your problem
                     </p>
                     <div className="w-full h-full bg-white mt-4 md:mt-12 overflow-hidden rounded-t-2xl z-20">
@@ -264,9 +256,7 @@ export default function Home() {
                         Visualization
                       </span>
                     </div>
-                    <p
-                      className={`text-sm md:text-2xl md:mt-1 ${zain.className}`}
-                    >
+                    <p className={`text-sm md:text-2xl md:mt-1`}>
                       Build the best decision for your ideas
                     </p>
                     <div className="w-full h-full bg-white mt-4 md:mt-12 overflow-hidden rounded-t-2xl">
@@ -336,7 +326,7 @@ export default function Home() {
         <Latest />
 
         <div
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 xl:px-[2.1em] text-[#1c3c63] md:text-center`}
+          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-20 lg:pt-32 xl:px-[2.1em] text-[#1c3c63] md:text-center`}
         >
           <ScrollFloat
             animationDuration={1}

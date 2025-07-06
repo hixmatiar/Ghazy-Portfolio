@@ -1,5 +1,5 @@
 "use client";
-import { Zain } from "next/font/google";
+// import { Zain } from "next/font/google";
 import {
   X,
   CellSignalHigh,
@@ -20,17 +20,17 @@ import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
-const zain = Zain({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const zain = Zain({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 export default function Undangan() {
   return (
     <section className="w-full h-fit bg-[#f8f4e1] text-black">
       <header>
         <div
-          className={` ${zain.className} w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
+          className={` w-full pt-12 lg:pt-24 bg-gradient-to-b from-sky-300 to-[#f8f4e1] flex justify-center items-center text-5xl lg:text-9xl text-[#1c3c63]`}
         >
           <SplitText
             text="Undangan Digital"
@@ -84,7 +84,7 @@ export default function Undangan() {
 
         {/* overview */}
         <div
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-2 md:pt-4 md:text-center text-[#1c3c63]`}
+          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-2 md:pt-4 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}
@@ -131,7 +131,7 @@ export default function Undangan() {
         </div>
 
         <div
-          className={`${zain.className} text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-6 md:pt-12 md:text-center text-[#1c3c63]`}
+          className={` text-[2em] md:text-[3.5em] xl:text-[5.5em] pt-6 md:pt-12 md:text-center text-[#1c3c63]`}
         >
           <ScrollFloat
             animationDuration={1}
@@ -175,9 +175,7 @@ export default function Undangan() {
               <a href=""></a>
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
-                  <h1 className={`${zain.className} text-3xl md:text-5xl mt-1`}>
-                    Sunda
-                  </h1>
+                  <h1 className={` text-3xl md:text-5xl mt-1`}>Sunda</h1>
                   <button className="flex gap-2 px-4 py-[6px] rounded-full border-2 items-center text-xs cursor-pointer">
                     See more{" "}
                     <span>
@@ -203,9 +201,7 @@ export default function Undangan() {
             <SwiperSlide className="bg-gradient-to-b from-[#FFA55D] to-[#F0BB78]/70 rounded-3xl pt-4 cursor-pointer">
               <div className="w-full h-full px-6 pt-1 text-white">
                 <div className="w-full h-fit flex justify-between items-center">
-                  <h1
-                    className={` ${zain.className} text-3xl md:text-5xl text-black mt-1`}
-                  >
+                  <h1 className={`  text-3xl md:text-5xl text-black mt-1`}>
                     Jawa
                   </h1>
                   <button className="flex gap-2 px-4 py-[6px] rounded-full border-2 items-center text-xs border-black text-black cursor-pointer">

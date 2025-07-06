@@ -1,5 +1,12 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default. dark --prefersdark;
+}
+
+@theme {
+  --color-accent-navy: #1c3c63;
+  --color-vanilla: #f8f4e1;
+}
 
 :root {
   --background: #ffffff;

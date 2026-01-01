@@ -33,7 +33,7 @@ export default function Home() {
         <div
           className={`${zain.className} w-full 2xl:w-10/14 h-fit text-accent-navy px-6 text-center 2xl:text-left pt-12 2xl:pt-0`}
         >
-          <h1 className="text-[3em] md:text-[6em] lg:text-[8em] xl:text-[9em] 2xl:text-[11.5em] mt-[-42px] xl:ml-[-10px]">
+          <h1 className="text-[3em] md:text-[5em] lg:text-[7em] xl:text-[8em] 2xl:text-[9em] mt-[-42px] xl:ml-[-10px]">
             <SplitText
               text="Hello, I'm Ghazy"
               delay={100}
@@ -45,7 +45,7 @@ export default function Home() {
               threshold={0.1}
             />
           </h1>
-          <h1 className="text-[1.2em] md:text-[2em] lg:text-[2.5em] xl:text-[3em] 2xl:text-6xl mt-[-40px] md:mt-[-78px] lg:mt-[-106px] xl:mt-[-130px] 2xl:mt-[-160px]">
+          <h1 className="text-[1.2em] md:text-[2em] lg:text-[2.5em] xl:text-[3em] 2xl:text-6xl mt-[-40px] md:mt-[-78px] lg:mt-[-106px] xl:mt-[-130px] 2xl:mt-[-110px]">
             <SplitText
               text="Big Data & Front-end Developer"
               delay={100}
@@ -59,7 +59,7 @@ export default function Home() {
           </h1>
           <div className="flex justify-center 2xl:justify-start">
             <h1
-              className={`text-black mt-6 w-full text-xs md:text-sm 2xl:text-md md:max-w-[448px] lg:max-w-[512px] xl:max-w-[768px] max-w-[320px] text-center lg:text-left`}
+              className={`text-black mt-6 w-full text-xs md:text-sm 2xl:text-lg md:max-w-[448px] lg:max-w-[512px] xl:max-w-[812px] max-w-[320px] text-center lg:text-left`}
             >
               <BlurText
                 text="I'am a programmer focusing on big data and front-end developer. I process and visualize it to get the best solution and decision for your idea. I can help you create a website and mobile application to show your idea to the world."
